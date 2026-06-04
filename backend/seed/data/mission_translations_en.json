@@ -1,0 +1,1278 @@
+[
+  {
+    "slug": "sputnik-1",
+    "description": "The first artificial Earth satellite, placed into orbit on October 4, 1957. It opened the space age in human history.",
+    "key_fact": "The satellite's signal — a simple radio beep — was picked up by amateur radio operators all over the world.",
+    "achievements": [
+      "First artificial object in Earth orbit",
+      "Proved the practical feasibility of spaceflight",
+      "Kicked off the Space Race between the USSR and the USA"
+    ]
+  },
+  {
+    "slug": "sputnik-2",
+    "description": "The second Soviet satellite, launched on November 3, 1957. It carried the dog Laika — the first living creature in orbit.",
+    "key_fact": "Laika became the first living being in space, although no return from orbit was planned.",
+    "achievements": [
+      "First living creature (the dog Laika) in Earth orbit",
+      "First biomedical data on the effects of space on a living organism"
+    ]
+  },
+  {
+    "slug": "explorer-1",
+    "description": "The first American satellite, launched on January 31, 1958. It discovered the Van Allen radiation belts.",
+    "key_fact": "The discovery of the Van Allen radiation belts was the first major U.S. scientific discovery in space.",
+    "achievements": [
+      "First successful U.S. satellite",
+      "Discovery of the inner Van Allen radiation belt",
+      "Launched the Explorer program"
+    ]
+  },
+  {
+    "slug": "vostok-1",
+    "description": "The first crewed spaceflight in history. On April 12, 1961, Yuri Gagarin completed one orbit around the Earth in 108 minutes.",
+    "key_fact": "Gagarin shouted his famous \"Poyekhali!\" (\"Let's go!\") and became the first human in space, circling the Earth in 108 minutes.",
+    "achievements": [
+      "First human in space",
+      "First crewed orbital flight",
+      "Proved that humans can survive in weightless conditions"
+    ]
+  },
+  {
+    "slug": "mercury-freedom7",
+    "description": "The first U.S. crewed suborbital spaceflight. On May 5, 1961, Alan Shepard spent 15 minutes in space.",
+    "key_fact": "Shepard became the first American in space just 23 days after Gagarin's flight.",
+    "achievements": [
+      "First American in space",
+      "First crewed flight of the Mercury program",
+      "Paved the way for U.S. orbital flights"
+    ]
+  },
+  {
+    "slug": "mercury-friendship7",
+    "description": "The first orbital flight by an American astronaut. On February 20, 1962, John Glenn orbited the Earth three times.",
+    "key_fact": "Glenn became the first American in orbit and a U.S. national hero.",
+    "achievements": [
+      "First American in Earth orbit",
+      "Three orbits around the Earth in 4 hours 55 minutes",
+      "Confirmed the spacecraft could be flown manually"
+    ]
+  },
+  {
+    "slug": "voskhod-2",
+    "description": "A Soviet spacecraft on which Alexei Leonov performed the first human spacewalk on March 18, 1965.",
+    "key_fact": "Leonov spent 12 minutes outside the spacecraft, but his suit ballooned and he had serious difficulty getting back inside.",
+    "achievements": [
+      "First human spacewalk (EVA)",
+      "Proved that a cosmonaut can work outside the spacecraft"
+    ]
+  },
+  {
+    "slug": "gemini-4",
+    "description": "During this mission, Ed White performed the first American spacewalk on June 3, 1965, spending 23 minutes outside the spacecraft.",
+    "key_fact": "White was so reluctant to come back inside that McDivitt had to call him in repeatedly; White replied, \"It's the saddest moment of my life.\"",
+    "achievements": [
+      "First American spacewalk",
+      "Four-day orbital flight"
+    ]
+  },
+  {
+    "slug": "luna-9",
+    "description": "The first spacecraft to make a soft landing on the Moon, on February 3, 1966, and transmit images from the surface.",
+    "key_fact": "Luna 9 disproved scientists' fears that the lunar surface was covered by a thick layer of dust that would swallow the spacecraft.",
+    "achievements": [
+      "First soft landing on the Moon",
+      "First photographs from the lunar surface",
+      "Proved that the lunar soil was firm"
+    ]
+  },
+  {
+    "slug": "luna-16",
+    "description": "A Soviet robotic spacecraft that, in September 1970, became the first to automatically collect and return lunar soil samples to Earth.",
+    "key_fact": "The probe returned 101 grams of lunar regolith — the first automated return of extraterrestrial material to Earth.",
+    "achievements": [
+      "First automated collection and return of lunar soil",
+      "Samples from the Sea of Fertility",
+      "Demonstrated the feasibility of robotic sample-return missions"
+    ]
+  },
+  {
+    "slug": "luna-17",
+    "description": "A Soviet mission that delivered the world's first planetary rover, Lunokhod 1, to the Moon. It operated for 322 days.",
+    "key_fact": "Lunokhod 1 drove 10.54 km across the lunar surface and transmitted more than 20,000 photographs.",
+    "achievements": [
+      "World's first rover on another celestial body",
+      "Drove 10.54 km and operated for 322 days",
+      "Transmitted more than 20,000 images and 206 panoramas"
+    ]
+  },
+  {
+    "slug": "apollo-8",
+    "description": "The first crewed flight to the Moon, entering lunar orbit in December 1968. The astronauts completed 10 orbits of the Moon.",
+    "key_fact": "The \"Earthrise\" photograph taken by Bill Anders from lunar orbit became one of the most influential images of the 20th century.",
+    "achievements": [
+      "First humans in lunar orbit",
+      "The iconic \"Earthrise\" photograph",
+      "First Christmas Eve broadcast to humanity from lunar orbit"
+    ]
+  },
+  {
+    "slug": "apollo-11",
+    "description": "The first crewed lunar expedition. On July 20, 1969, Neil Armstrong and Buzz Aldrin landed in the Sea of Tranquility.",
+    "key_fact": "Armstrong said, \"That's one small step for man, one giant leap for mankind.\" The astronauts brought back 21.5 kg of lunar soil.",
+    "achievements": [
+      "First humans on the Moon",
+      "First human to set foot on another celestial body",
+      "Collected 21.5 kg of lunar soil for scientific research"
+    ]
+  },
+  {
+    "slug": "apollo-12",
+    "description": "The second crewed lunar expedition, in November 1969. A pinpoint landing in the Ocean of Storms near the Surveyor 3 probe.",
+    "key_fact": "The astronauts walked up to the earlier Surveyor 3 lander and removed parts of it to study the effects of the lunar environment.",
+    "achievements": [
+      "Pinpoint landing at a selected site on the lunar surface",
+      "Retrieval of parts from the Surveyor 3 spacecraft",
+      "Deployment of the first long-term lunar seismic station, ALSEP"
+    ]
+  },
+  {
+    "slug": "apollo-13",
+    "description": "The third planned lunar expedition, which became a rescue mission after an oxygen tank exploded on the way to the Moon.",
+    "key_fact": "The phrase \"Houston, we have a problem\" became iconic. The crew used the lunar module as a lifeboat and returned alive.",
+    "achievements": [
+      "Successful rescue of the crew after a catastrophic equipment failure",
+      "Demonstrated the ability to operate under extreme conditions",
+      "Invaluable experience in managing in-flight crises in space"
+    ]
+  },
+  {
+    "slug": "apollo-14",
+    "description": "The third successful lunar expedition, in February 1971. It landed near the Fra Mauro crater and collected 42.9 kg of lunar material.",
+    "key_fact": "Alan Shepard became the only Mercury astronaut to reach the Moon and played golf on the lunar surface.",
+    "achievements": [
+      "Landing in the challenging Fra Mauro region",
+      "Collected 42.9 kg of lunar soil and rocks",
+      "First game of golf on another celestial body"
+    ]
+  },
+  {
+    "slug": "apollo-15",
+    "description": "The fourth lunar expedition, in July-August 1971. First use of the Lunar Roving Vehicle (LRV); landing at Mount Hadley.",
+    "key_fact": "The \"Genesis Rock\" — a 4.5-billion-year-old anorthosite crystal dating back to the Moon's formation — was discovered.",
+    "achievements": [
+      "First use of the Lunar Roving Vehicle (LRV)",
+      "Discovery of the 4.5-billion-year-old \"Genesis Rock\"",
+      "Collected 77 kg of lunar rock samples"
+    ]
+  },
+  {
+    "slug": "apollo-16",
+    "description": "The fifth successful lunar expedition, in April 1972. It landed in the Descartes Highlands and studied volcanic rocks.",
+    "key_fact": "John Young set a lunar rover speed record of 17.1 km/h on the lunar surface.",
+    "achievements": [
+      "Exploration of the lunar highlands and the Descartes crater",
+      "Collected 95.7 kg of lunar soil samples",
+      "Lunar rover speed record of 17.1 km/h"
+    ]
+  },
+  {
+    "slug": "apollo-17",
+    "description": "The last expedition of the Apollo program to the Moon, in December 1972. The only mission to include a scientist-geologist in the crew.",
+    "key_fact": "Geologist Harrison Schmitt discovered orange lunar soil — evidence of volcanic activity billions of years ago.",
+    "achievements": [
+      "Record sample haul — 110.5 kg of lunar rocks",
+      "Discovery of orange lunar soil of volcanic origin",
+      "Eugene Cernan — the last human to walk on the Moon to date"
+    ]
+  },
+  {
+    "slug": "clementine",
+    "description": "A joint mission of NASA and the U.S. Department of Defense. It carried out the first complete mapping of the Moon's surface.",
+    "key_fact": "Clementine found the first indirect evidence of water ice in permanently shadowed craters near the Moon's poles.",
+    "achievements": [
+      "First complete mapping of the lunar surface",
+      "Indirect evidence of water ice at the lunar poles",
+      "Created a global topographic map of the Moon"
+    ]
+  },
+  {
+    "slug": "lunar-prospector",
+    "description": "A NASA orbital probe that confirmed the presence of water ice in the Moon's polar craters and mapped its gravitational field.",
+    "key_fact": "Confirmation of millions of tons of water ice in the Moon's polar craters opened the door to future lunar bases.",
+    "achievements": [
+      "Confirmed the existence of water ice at the lunar poles",
+      "Detailed maps of the Moon's gravitational and magnetic fields",
+      "Detected concentrations of hydrogen-rich regolith"
+    ]
+  },
+  {
+    "slug": "lro",
+    "description": "NASA's Lunar Reconnaissance Orbiter creates detailed maps of the lunar surface and hunts for resources to support future crewed expeditions.",
+    "key_fact": "LRO photographed the Apollo landing sites at a resolution high enough to pick out the equipment the astronauts left behind.",
+    "achievements": [
+      "Created the most detailed map of the lunar surface",
+      "Photographed every crewed lunar landing site",
+      "Discovered and mapped lava tubes as potential shelters"
+    ]
+  },
+  {
+    "slug": "chandrayaan-1",
+    "description": "India's first lunar probe, launched in October 2008. It confirmed the presence of water molecules on the Moon's surface.",
+    "key_fact": "A NASA instrument aboard Chandrayaan-1 detected water molecules in the lunar soil — a key discovery for future expeditions.",
+    "achievements": [
+      "India's first lunar mission",
+      "Confirmed the presence of water on the Moon's surface",
+      "Detailed mapping of the mineral composition of the lunar soil"
+    ]
+  },
+  {
+    "slug": "chandrayaan-2",
+    "description": "India's second lunar mission included an orbiter, the Vikram lander, and the Pragyan rover. The lander crashed during descent.",
+    "key_fact": "Although the lander was lost, the orbiter continues to operate and return valuable scientific data.",
+    "achievements": [
+      "Orbiter operating successfully in lunar orbit",
+      "Detailed study of the lunar surface in the polar regions",
+      "Experience that paved the way for Chandrayaan-3"
+    ]
+  },
+  {
+    "slug": "chandrayaan-3",
+    "description": "India's third lunar mission successfully soft-landed near the Moon's south pole on August 23, 2023.",
+    "key_fact": "India became the first country to land near the Moon's south pole, and the fourth country to achieve a soft lunar landing.",
+    "achievements": [
+      "First soft landing near the Moon's south pole",
+      "India — fourth country to achieve a successful lunar landing",
+      "Detection of sulfur and other elements near the south pole"
+    ]
+  },
+  {
+    "slug": "change-1",
+    "description": "China's first lunar orbiter. It produced a high-resolution three-dimensional map of the Moon's surface.",
+    "key_fact": "Chang'e 1 launched the era of China's Chang'e lunar program, named for the Chinese moon goddess.",
+    "achievements": [
+      "China's first lunar mission",
+      "Produced a global 3D map of the Moon",
+      "Began China's long-term lunar exploration program"
+    ]
+  },
+  {
+    "slug": "change-3",
+    "description": "China's third lunar mission, which delivered a lander and the Yutu rover to the Moon's surface in December 2013.",
+    "key_fact": "China became the third country (after the USSR and the USA) to soft-land on the Moon. The Yutu rover operated well beyond its planned three-month lifetime.",
+    "achievements": [
+      "China's first soft landing on the Moon",
+      "China's first lunar rover, Yutu",
+      "Exploration of the Mare Imbrium lava plain"
+    ]
+  },
+  {
+    "slug": "change-4",
+    "description": "The first spacecraft in history to make a soft landing on the far side of the Moon, on January 3, 2019, inside the Von Kármán crater.",
+    "key_fact": "Landing on the far side of the Moon required a dedicated relay satellite, Queqiao, because direct communication with Earth is impossible there.",
+    "achievements": [
+      "First-ever landing on the far side of the Moon",
+      "The Yutu-2 rover explores the Von Kármán crater",
+      "Unique scientific data from a previously inaccessible region"
+    ]
+  },
+  {
+    "slug": "change-5",
+    "description": "China's first lunar sample-return mission. In December 2020 it brought back 1.73 kg of samples from the volcanic Mons Rümker region.",
+    "key_fact": "Chang'e 5's samples turned out to be the youngest lunar rocks ever collected — about 2 billion years old — rewriting our understanding of lunar activity.",
+    "achievements": [
+      "China's first lunar sample return",
+      "Samples of young lunar volcanic rock about 2 billion years old",
+      "Third country (after the USSR and the USA) to return lunar samples"
+    ]
+  },
+  {
+    "slug": "artemis-1",
+    "description": "The first uncrewed test flight of the SLS rocket and the Orion spacecraft around the Moon, in November-December 2022.",
+    "key_fact": "Orion flew within 130 km of the Moon's surface and traveled 432,210 km from Earth — a record for a crew-rated spacecraft.",
+    "achievements": [
+      "Successful test of the SLS rocket and the Orion spacecraft",
+      "Distance record for a crew-rated spacecraft",
+      "Paved the way for humans to return to the Moon under the Artemis program"
+    ]
+  },
+  {
+    "slug": "mariner-4",
+    "description": "The first spacecraft to successfully fly by Mars, in July 1965, returning the first close-up images of the Red Planet.",
+    "key_fact": "The first 22 images of Mars showed a cratered, Moon-like surface — shattering dreams of canals and civilizations.",
+    "achievements": [
+      "First close-up images of the Martian surface",
+      "Discovery of craters and measurement of a thin atmosphere",
+      "Measured Mars's atmospheric pressure at about 0.5% of Earth's"
+    ]
+  },
+  {
+    "slug": "mars-2",
+    "description": "A Soviet orbiter and lander. The lander crashed, becoming the first human-made object on the surface of Mars.",
+    "key_fact": "Mars 2 delivered the first human-made object to Mars, although the landing ended in a crash caused by a massive dust storm.",
+    "achievements": [
+      "First human-made object on the surface of Mars",
+      "First Soviet orbiter at Mars",
+      "Study of Mars's magnetic field and atmosphere"
+    ]
+  },
+  {
+    "slug": "mars-3",
+    "description": "A Soviet Mars orbiter-lander combination. On December 2, 1971, the lander performed the first soft landing on Mars but lost contact after 20 seconds.",
+    "key_fact": "Mars 3 was the first spacecraft to soft-land on Mars, but it only managed to transmit part of an incomplete image.",
+    "achievements": [
+      "First soft landing on Mars",
+      "Proved the technical feasibility of landing on the Red Planet",
+      "The orbiter operated for several months"
+    ]
+  },
+  {
+    "slug": "viking-1",
+    "description": "The first American Mars lander, which touched down on Chryse Planitia on July 20, 1976, and operated for six years.",
+    "key_fact": "Viking's biological experiments returned ambiguous results — there is still no definitive answer as to whether signs of life were detected.",
+    "achievements": [
+      "First successful long-duration landing on Mars",
+      "First color photographs of the Martian surface",
+      "Searched for signs of life through biological experiments"
+    ]
+  },
+  {
+    "slug": "viking-2",
+    "description": "The second American Mars lander, which set down on Utopia Planitia on September 3, 1976. It operated for 1,281 days.",
+    "key_fact": "Viking 2 observed water frost on the Martian surface — the first direct sign of water on the planet.",
+    "achievements": [
+      "Landing on Mars's northern plains — a second study site",
+      "First observation of water frost on the Martian surface",
+      "Detailed study of Martian seasons and weather"
+    ]
+  },
+  {
+    "slug": "mars-pathfinder",
+    "description": "The mission included a lander and the first Mars rover, Sojourner, weighing 10.6 kg. It landed on July 4, 1997, in Ares Vallis.",
+    "key_fact": "Sojourner became the first successful rover on Mars. The airbag landing technique was a revolutionary and low-cost innovation.",
+    "achievements": [
+      "First successful Mars rover",
+      "Innovative airbag landing technique",
+      "Detection of rounded stones — evidence of ancient floods"
+    ]
+  },
+  {
+    "slug": "mars-global-surveyor",
+    "description": "An orbiter that produced detailed maps of the Martian surface and operated for nearly ten years, from 1997 to 2006.",
+    "key_fact": "MGS found evidence of recent (in geological terms) liquid water on Mars in the form of gullies on crater slopes.",
+    "achievements": [
+      "Produced the most detailed maps of the Martian surface",
+      "Discovered signs of recent water flows",
+      "Confirmed the presence of a strong residual magnetic field"
+    ]
+  },
+  {
+    "slug": "mer-spirit",
+    "description": "The Spirit rover operated in Gusev Crater from January 2004 to March 2010, driving 7.73 km — 12 times further than its planned 600 meters.",
+    "key_fact": "Spirit operated for 2,208 Martian sols instead of the planned 90 — exceeding its mission plan by a factor of 25.",
+    "achievements": [
+      "Evidence of past volcanic and hydrothermal processes",
+      "Drove 7.73 km across the Martian surface",
+      "Detected minerals that form only in the presence of water"
+    ]
+  },
+  {
+    "slug": "mer-opportunity",
+    "description": "The Opportunity rover operated from January 2004 to June 2018, setting a rover distance record of 45.16 km. It explored Endeavour Crater.",
+    "key_fact": "Opportunity operated for 5,111 Martian sols — nearly 57 times longer than its planned 90. Its last transmission: \"My battery is low and it's getting dark.\"",
+    "achievements": [
+      "Rover distance record of 45.16 km",
+      "Evidence of liquid water on ancient Mars",
+      "Discovery of hematite \"blueberries\" — concretions formed in water"
+    ]
+  },
+  {
+    "slug": "mars-express",
+    "description": "Europe's first Mars orbiter, operating since December 2003. It detected liquid water beneath the ice of the south polar cap.",
+    "key_fact": "The MARSIS radar detected a subsurface lake of liquid water 1.5 km beneath Mars's south polar cap.",
+    "achievements": [
+      "Detected a subsurface lake of liquid water",
+      "Radar mapping of subsurface layers on Mars",
+      "Detected methane in the Martian atmosphere"
+    ]
+  },
+  {
+    "slug": "mro",
+    "description": "A powerful orbiter with the HiRISE camera, which produces 25-60 cm resolution images from orbit. It has been operating since 2006.",
+    "key_fact": "The HiRISE camera photographed the Opportunity rover from orbit, resolving its wheel tracks on the surface.",
+    "achievements": [
+      "Best images of Mars from orbit — resolution down to 25 cm",
+      "Discovery of seasonal dark streaks as possible briny flows",
+      "Mapping of ice deposits and mineral resources"
+    ]
+  },
+  {
+    "slug": "phoenix",
+    "description": "A stationary lander that set down on Mars's arctic plains in May 2008. It directly confirmed the presence of water in the soil.",
+    "key_fact": "Phoenix literally \"touched\" water ice just below the Martian surface — the first direct contact with water on another planet.",
+    "achievements": [
+      "First direct confirmation of subsurface water ice on Mars",
+      "Detection of perchlorates in the Martian soil",
+      "Study of arctic seasonal processes"
+    ]
+  },
+  {
+    "slug": "curiosity",
+    "description": "A car-sized rover operating in Gale Crater since August 2012. It is powered by a nuclear (RTG) power source.",
+    "key_fact": "Curiosity proved that Gale Crater was once an ancient habitable lake — conditions were suitable for microbial life 3.5 billion years ago.",
+    "achievements": [
+      "Proved that Mars was once habitable",
+      "Detection of organic molecules in the Martian soil",
+      "Successful \"sky crane\" landing technique"
+    ]
+  },
+  {
+    "slug": "maven",
+    "description": "An orbiter that studies Mars's upper atmosphere and the process by which it is stripped away into space by the solar wind.",
+    "key_fact": "MAVEN established that Mars lost most of its atmosphere to the solar wind — explaining why the planet became a cold desert.",
+    "achievements": [
+      "Studied the mechanism of Mars's atmospheric loss",
+      "Studied the interaction of the solar wind with the atmosphere",
+      "Relayed data from Mars rovers"
+    ]
+  },
+  {
+    "slug": "mom",
+    "description": "India's first interplanetary mission entered Mars orbit on September 24, 2014. India became the first country to successfully reach Mars on its first attempt.",
+    "key_fact": "The mission cost just 74 million dollars — less than the production of the film Gravity. India joined the Mars club on the world's third try.",
+    "achievements": [
+      "First Asian mission in Mars orbit",
+      "India — first country to reach Mars on the first attempt",
+      "Most cost-efficient interplanetary mission in history"
+    ]
+  },
+  {
+    "slug": "insight",
+    "description": "A stationary geophysical probe that landed on Elysium Planitia on November 26, 2018. It studied Mars's interior using a seismometer.",
+    "key_fact": "InSight recorded more than 1,300 marsquakes, including those caused by meteorite impacts, and determined the structure of Mars's core, mantle, and crust.",
+    "achievements": [
+      "First measurements of seismic activity on Mars",
+      "Determined the structure of the planet's interior",
+      "Recorded more than 1,300 marsquakes"
+    ]
+  },
+  {
+    "slug": "perseverance",
+    "description": "The most advanced Mars rover, operating in Jezero Crater since February 2021. The Ingenuity helicopter performed the first powered flights in another planet's atmosphere.",
+    "key_fact": "Ingenuity made the first flight in the atmosphere of another planet on April 19, 2021 — 117 years after the Wright brothers' first flight.",
+    "achievements": [
+      "First powered flight of an aircraft in another planet's atmosphere",
+      "Production of oxygen from Martian carbon dioxide (MOXIE)",
+      "Cached core samples for a future sample-return mission"
+    ]
+  },
+  {
+    "slug": "tianwen-1",
+    "description": "China's first Mars mission included an orbiter, a lander, and the Zhurong rover. The landing took place on May 15, 2021.",
+    "key_fact": "China became the second country after the USA to successfully land a rover on Mars, combining an orbiter and a lander in a single mission.",
+    "achievements": [
+      "China's first Mars rover, Zhurong",
+      "China — second country to successfully land a rover on Mars",
+      "Comprehensive study of Martian soil and atmosphere"
+    ]
+  },
+  {
+    "slug": "hope-mars",
+    "description": "The first interplanetary mission from the Arab world. It entered Mars orbit on February 9, 2021, and studies atmospheric dynamics and climate.",
+    "key_fact": "The UAE became the fifth country to reach Mars. Hope is the first mission to study the daily climate cycle across the entire Martian atmosphere.",
+    "achievements": [
+      "First Arab-world mission to another planet",
+      "Comprehensive study of Mars's climate and atmosphere",
+      "Inspiration for the growth of science across the Arab world"
+    ]
+  },
+  {
+    "slug": "mariner-2",
+    "description": "The first successful interplanetary probe. In December 1962 it flew past Venus at a distance of 34,800 km and measured the planet's temperature.",
+    "key_fact": "Mariner 2 confirmed that Venus's surface temperature exceeds 400 degrees C — shattering dreams of tropical jungles.",
+    "achievements": [
+      "First successful interplanetary probe in history",
+      "First measurements of Venus's atmospheric temperature and pressure",
+      "Discovery of the solar wind"
+    ]
+  },
+  {
+    "slug": "venera-7",
+    "description": "The first spacecraft to soft-land on another planet and transmit data from Venus's surface in December 1970.",
+    "key_fact": "Venera 7 confirmed: Venus's surface temperature is 475 degrees C, pressure is 90 atmospheres — equivalent to a kilometer-deep ocean on Earth.",
+    "achievements": [
+      "First soft landing on another planet",
+      "First measurements taken from the surface of Venus",
+      "Confirmation of the hellish conditions at the surface"
+    ]
+  },
+  {
+    "slug": "venera-9",
+    "description": "A Soviet lander that returned the first photographs of Venus's surface. The images showed sharp, angular rocks — a young volcanic surface.",
+    "key_fact": "The rocks looked sharp and fresh — meaning either there is no weathering on Venus, or the surface is very young. The probe survived 53 minutes on the hellish planet.",
+    "achievements": [
+      "First photographs of Venus's surface",
+      "Evidence of a young volcanic surface",
+      "Study of the atmosphere and cloud layer"
+    ]
+  },
+  {
+    "slug": "venera-13",
+    "description": "A Soviet lander that survived 127 minutes on Venus's surface and returned the first color images while also analyzing the soil composition.",
+    "key_fact": "Venera 13 survived 127 minutes at 457 degrees C — twice the planned duration. The soil turned out to be similar to terrestrial basalts.",
+    "achievements": [
+      "First color images of Venus's surface",
+      "First chemical analysis of Venusian soil",
+      "Record operating time on Venus's surface — 127 minutes"
+    ]
+  },
+  {
+    "slug": "magellan",
+    "description": "An orbiter that produced radar maps of 98% of Venus's surface at 100-120 meter resolution between 1990 and 1994.",
+    "key_fact": "Magellan revealed a geologically active surface on Venus with thousands of volcanoes, although no confirmed active eruptions were detected.",
+    "achievements": [
+      "Radar mapping of 98% of Venus's surface",
+      "Discovery of thousands of volcanoes and lava plains",
+      "Refinement of Venus's gravitational field"
+    ]
+  },
+  {
+    "slug": "pioneer-10",
+    "description": "The first spacecraft to traverse the asteroid belt and reach Jupiter, in December 1973. The first human-made object to leave the Solar System.",
+    "key_fact": "Pioneer 10 carries a gold plaque with a message for extraterrestrial civilizations — an image of a man and a woman and the Solar System's layout.",
+    "achievements": [
+      "First passage through the asteroid belt",
+      "First close-up images of Jupiter",
+      "First human-made object to leave the Solar System"
+    ]
+  },
+  {
+    "slug": "pioneer-11",
+    "description": "The first spacecraft to reach Saturn, in September 1979. It returned the first close-up images of the gas giant and its rings.",
+    "key_fact": "Pioneer 11 discovered a new ring of Saturn — the F ring, which had been previously unknown.",
+    "achievements": [
+      "First spacecraft at Saturn",
+      "Discovery of Saturn's F ring",
+      "Measurement of Saturn's magnetic field and radiation belts"
+    ]
+  },
+  {
+    "slug": "voyager-1",
+    "description": "The most distant human-made object. It explored Jupiter and Saturn, then headed into interstellar space, which it reached in 2012.",
+    "key_fact": "In 2012, Voyager 1 crossed beyond the heliosphere, becoming the first human-made object in interstellar space.",
+    "achievements": [
+      "Discovered volcanoes on Io — the first active volcanoes beyond Earth",
+      "Detected a thin atmosphere on Titan",
+      "First object to leave the heliosphere"
+    ]
+  },
+  {
+    "slug": "voyager-2",
+    "description": "The only spacecraft to visit all four giant planets of the Solar System: Jupiter, Saturn, Uranus, and Neptune.",
+    "key_fact": "Voyager 2 is the only spacecraft to have visited Uranus and Neptune. At Neptune it discovered dark spots and the famous Great Dark Spot.",
+    "achievements": [
+      "Only visit to Uranus and Neptune in history",
+      "Discovery of active geysers on Triton",
+      "Exploration of all four giant planets"
+    ]
+  },
+  {
+    "slug": "galileo",
+    "description": "An orbiter that circled Jupiter from 1995 to 2003, released an atmospheric probe, and studied the moons of the gas giant.",
+    "key_fact": "Galileo found strong evidence of a liquid ocean beneath Europa's ice — a potential abode of life in the Solar System.",
+    "achievements": [
+      "Discovery of a subsurface ocean on Europa",
+      "First orbiter at Jupiter",
+      "Atmospheric probe measured the composition and dynamics of Jupiter's atmosphere"
+    ]
+  },
+  {
+    "slug": "cassini-huygens",
+    "description": "The Cassini orbiter studied Saturn for 13 years. The Huygens probe landed on Titan on January 14, 2005.",
+    "key_fact": "Cassini discovered water geysers on Enceladus — a moon of Saturn — ejecting water vapor and organics into space.",
+    "achievements": [
+      "Discovery of water and organic geysers on Enceladus",
+      "Huygens probe — first landing in the outer Solar System (Titan)",
+      "13 years of orbital exploration of the Saturn system"
+    ]
+  },
+  {
+    "slug": "new-horizons",
+    "description": "The spacecraft performed a historic flyby of Pluto on July 14, 2015, returning the first detailed images of the dwarf planet.",
+    "key_fact": "New Horizons found a giant heart-shaped feature on Pluto, Tombaugh Regio, made of frozen nitrogen.",
+    "achievements": [
+      "First detailed images of Pluto",
+      "Discovery of ice mountain ranges and nitrogen plains",
+      "Flyby of the Kuiper Belt object Arrokoth in 2019"
+    ]
+  },
+  {
+    "slug": "juno",
+    "description": "An orbiter that has been studying Jupiter's interior structure, magnetic field, and auroras since 2016.",
+    "key_fact": "Juno found that Jupiter has a \"diffuse\" core rather than a compact one — gravity measurements have changed our picture of gas giants.",
+    "achievements": [
+      "Studied Jupiter's interior structure",
+      "Discovered a \"diffuse\" non-uniform core",
+      "Detailed images of the auroras and atmospheric storms"
+    ]
+  },
+  {
+    "slug": "bepicolombo",
+    "description": "A joint ESA and JAXA mission heading to Mercury; it will enter orbit in December 2025. The first European mission to Mercury.",
+    "key_fact": "Because of the Sun's strong gravity, entering orbit around Mercury requires more fuel than a flight to Pluto.",
+    "achievements": [
+      "First joint European-Japanese interplanetary mission",
+      "Multiple gravity assists at Earth, Venus, and Mercury",
+      "Planned study of Mercury's geology and magnetosphere"
+    ]
+  },
+  {
+    "slug": "soho",
+    "description": "The Solar and Heliospheric Observatory has operated at Lagrange point L1 since 1996, observing the Sun continuously for nearly 30 years.",
+    "key_fact": "SOHO has discovered more than 4,000 comets — more than all other instruments combined. Most of them were spotted by amateurs in images online.",
+    "achievements": [
+      "Continuous solar observation for nearly 30 years",
+      "Discovery of more than 4,000 comets",
+      "Monitoring of solar flares and coronal mass ejections"
+    ]
+  },
+  {
+    "slug": "parker-solar-probe",
+    "description": "The first spacecraft to \"touch\" the Sun — flying through the solar corona at less than 10 million km from the surface.",
+    "key_fact": "Parker Solar Probe flies faster than any human-made object in history — up to 692,000 km/h. It \"touched\" the Sun's corona in 2021.",
+    "achievements": [
+      "First spacecraft inside the solar corona",
+      "Speed record for a human-made object",
+      "Study of the origin and structure of the solar wind"
+    ]
+  },
+  {
+    "slug": "solar-orbiter",
+    "description": "A European solar orbiter producing the first detailed images of the Sun's poles. It returned images of \"campfires\" in the Sun's atmosphere.",
+    "key_fact": "Solar Orbiter discovered thousands of \"campfires\" — miniature flares in the Sun's atmosphere that may explain coronal heating.",
+    "achievements": [
+      "First images of the Sun's poles",
+      "Discovery of \"campfires\" in the solar atmosphere",
+      "Study of the link between the Sun's surface and the heliosphere"
+    ]
+  },
+  {
+    "slug": "hubble",
+    "description": "A space telescope in low Earth orbit that has operated for over 34 years and made more than 1.5 million observations, reshaping astronomy.",
+    "key_fact": "Hubble helped determine the age of the Universe at 13.8 billion years. At the start of its mission, the mirror had a flaw and required repair by astronauts.",
+    "achievements": [
+      "Determined the age of the Universe at 13.8 billion years",
+      "Discovery of the accelerating expansion of the Universe",
+      "More than 1.5 million astronomical observations over 34 years"
+    ]
+  },
+  {
+    "slug": "chandra",
+    "description": "NASA's X-ray observatory observes high-energy phenomena in the Universe: black holes, neutron stars, and supernova remnants.",
+    "key_fact": "Chandra has imaged the black hole at the center of the Milky Way and X-ray echoes from supernova explosions thousands of years old.",
+    "achievements": [
+      "X-ray mapping of galaxies and clusters",
+      "Study of black holes and neutron stars",
+      "Observations of Sgr A* — the supermassive black hole at the Galactic center"
+    ]
+  },
+  {
+    "slug": "jwst",
+    "description": "The most powerful space telescope has operated at Lagrange point L2 since 2022. It observes the Universe's first galaxies and exoplanet atmospheres.",
+    "key_fact": "JWST revealed galaxies that existed just 320 million years after the Big Bang — rewriting the history of the early Universe.",
+    "achievements": [
+      "Images of galaxies that existed 13.5 billion years ago",
+      "Detection of water and CO2 molecules in exoplanet atmospheres",
+      "Detailed images of nebulae and star-forming regions"
+    ]
+  },
+  {
+    "slug": "skylab",
+    "description": "The first American space station, operating in 1973-1974. Three crews spent a combined total of 171 days aboard.",
+    "key_fact": "Skylab's second crew spent 59 days in space — a U.S. record at the time. The station reentered the atmosphere in 1979.",
+    "achievements": [
+      "First U.S. long-duration orbital station",
+      "First detailed solar observations from orbit",
+      "Medical research on long-duration spaceflight"
+    ]
+  },
+  {
+    "slug": "mir",
+    "description": "A Soviet/Russian orbital station that operated for 15 years, from 1986 to 2001. The first modular space station, which hosted 125 cosmonauts.",
+    "key_fact": "Valeri Polyakov spent 437 consecutive days aboard Mir — a single-flight record that still stands.",
+    "achievements": [
+      "World record for a single spaceflight — 437 days (Polyakov)",
+      "First long-duration international space station",
+      "Extensive medical and biological research"
+    ]
+  },
+  {
+    "slug": "iss",
+    "description": "The International Space Station is the largest human-made object in space. It has been continuously inhabited since November 2000.",
+    "key_fact": "The ISS has been continuously inhabited for more than 23 years. It took over 30 years and more than 150 billion dollars to build — the most expensive object in history.",
+    "achievements": [
+      "Most expensive object in history — over 150 billion dollars",
+      "Continuous human presence in space since 2000",
+      "Hundreds of thousands of scientific experiments from 109 countries"
+    ]
+  },
+  {
+    "slug": "near-shoemaker",
+    "description": "The first spacecraft to orbit an asteroid (Eros) and the first to soft-land on an asteroid's surface, on February 12, 2001.",
+    "key_fact": "The spacecraft was not designed to land, but engineers took the risk and successfully set it down on the asteroid, where it operated for two more weeks.",
+    "achievements": [
+      "First spacecraft to orbit an asteroid",
+      "First soft landing on an asteroid",
+      "Detailed study of the composition and structure of asteroid Eros"
+    ]
+  },
+  {
+    "slug": "rosetta",
+    "description": "A European mission that entered orbit around comet 67P/Churyumov-Gerasimenko in 2014. The Philae probe became the first to land on a comet nucleus.",
+    "key_fact": "Philae bounced twice before settling — the gravity was too low. Rosetta detected organic molecules on the comet, including the amino acid glycine.",
+    "achievements": [
+      "First spacecraft to orbit a comet",
+      "First landing on a comet nucleus",
+      "Detection of organic molecules and glycine on a comet"
+    ]
+  },
+  {
+    "slug": "hayabusa-1",
+    "description": "A Japanese spacecraft that visited asteroid Itokawa and returned the first samples of asteroid material to Earth in June 2010.",
+    "key_fact": "The mission suffered numerous failures but still delivered to Earth several thousand particles of asteroid material smaller than 1 mm.",
+    "achievements": [
+      "First sample return from an asteroid",
+      "Proved that Itokawa is a \"rubble pile\" rather than a monolith",
+      "Overcame numerous technical failures"
+    ]
+  },
+  {
+    "slug": "hayabusa-2",
+    "description": "A Japanese spacecraft that explored asteroid Ryugu and returned 5.4 g of carbonaceous material to Earth in December 2020.",
+    "key_fact": "Hayabusa2 created an artificial crater on asteroid Ryugu by detonating a charge. Samples from the crater contained amino acids and organics.",
+    "achievements": [
+      "First artificial crater created on an asteroid",
+      "Sample-return of a carbonaceous asteroid with organic material",
+      "Detection of amino acids — the building blocks of life"
+    ]
+  },
+  {
+    "slug": "dart",
+    "description": "The first-ever test of planetary defense technology. On September 26, 2022, the spacecraft slammed into the asteroid Dimorphos and altered its orbit.",
+    "key_fact": "DART changed Dimorphos's orbital period around Didymos by 32 minutes — far exceeding scientists' expectations.",
+    "achievements": [
+      "First successful deflection of an asteroid's orbit",
+      "Demonstration of planetary-defense technology against asteroids",
+      "Orbital change of 32 minutes instead of the expected 10"
+    ]
+  },
+  {
+    "slug": "osiris-rex",
+    "description": "An American spacecraft that collected samples from asteroid Bennu and delivered 121 grams of carbonaceous material to Earth in September 2023.",
+    "key_fact": "Samples from Bennu contain water and organic molecules — clues to the early chemistry of the Solar System 4.5 billion years ago.",
+    "achievements": [
+      "Delivery of 121 g of samples from a carbonaceous asteroid",
+      "Detection of water and organics in asteroid material",
+      "The spacecraft continues on to asteroid Apophis as OSIRIS-APEX"
+    ]
+  },
+  {
+    "slug": "crew-dragon-demo2",
+    "description": "The first crewed flight of SpaceX's commercial Crew Dragon spacecraft to the ISS, in May 2020.",
+    "key_fact": "For the first time in 9 years (since 2011), the USA sent astronauts to orbit from American soil, ending its reliance on Russian Soyuz spacecraft.",
+    "achievements": [
+      "First crewed flight of a commercial spacecraft to the ISS",
+      "Resumption of astronaut launches from U.S. soil",
+      "Opened the era of commercial human spaceflight"
+    ]
+  },
+  {
+    "slug": "inspiration4",
+    "description": "The first all-civilian orbital crew in history — no professional astronauts on board. They spent 3 days in orbit in September 2021.",
+    "key_fact": "The crew consisted of civilians: a billionaire, an oncology physician assistant, a teacher, and an engineer. They reached an orbit higher than the ISS.",
+    "achievements": [
+      "First all-civilian orbital crew",
+      "Flight at an altitude of 585 km — higher than the ISS",
+      "Fundraising for St. Jude Children's Research Hospital"
+    ]
+  },
+  {
+    "slug": "axiom-1",
+    "description": "The first fully private mission to the ISS, operated by Axiom Space. The crew spent 15 days aboard the station in April 2022.",
+    "key_fact": "Ax-1 was the first fully private commercial flight to the ISS, opening the era of commercial orbital travel for wealthy customers.",
+    "achievements": [
+      "First private commercial mission to the ISS",
+      "Opened the orbital space tourism market",
+      "Scientific experiments in microgravity"
+    ]
+  },
+  {
+    "slug": "ranger-7",
+    "description": "The first successful American mission to the Moon. It returned more than 4,000 images of the surface before deliberately impacting the Moon.",
+    "key_fact": "Ranger 7 returned images 1,000 times sharper than ground-based telescopes — the first detailed photographs of the Moon.",
+    "achievements": [
+      "First detailed images of the lunar surface",
+      "More than 4,000 images returned before impact",
+      "Identified smooth regions for future landings"
+    ]
+  },
+  {
+    "slug": "surveyor-1",
+    "description": "The first American spacecraft to soft-land on the Moon, in June 1966. It proved that the surface would support the weight of a lander.",
+    "key_fact": "Surveyor 1 returned more than 11,000 images and proved that the lunar soil was firm enough to support crewed landings.",
+    "achievements": [
+      "First American soft landing on the Moon",
+      "Proved the load-bearing capacity of the lunar soil",
+      "More than 11,000 images of the lunar surface"
+    ]
+  },
+  {
+    "slug": "mariner-9",
+    "description": "The first spacecraft to orbit another planet. It mapped 85% of the Martian surface and discovered Olympus Mons and Valles Marineris.",
+    "key_fact": "Mariner 9 discovered Olympus Mons — the tallest volcano in the Solar System at 21 km high — and the 4,000-km-long Valles Marineris canyon system.",
+    "achievements": [
+      "First spacecraft to orbit another planet",
+      "Discovery of Olympus Mons — tallest volcano in the Solar System",
+      "Mapping of 85% of the Martian surface"
+    ]
+  },
+  {
+    "slug": "mars-odyssey",
+    "description": "This orbiter has been the longest continuously operating spacecraft in Mars orbit since October 2001. It produced thermal maps of the planet.",
+    "key_fact": "Mars Odyssey detected vast reserves of water ice in the near-polar regions of Mars and continues to return data to this day.",
+    "achievements": [
+      "Longest continuously operating spacecraft in Mars orbit",
+      "Detection of water ice in the near-surface layer",
+      "Thermal maps of the entire Martian surface"
+    ]
+  },
+  {
+    "slug": "smart-1",
+    "description": "The first European lunar mission. It used an ion drive to reach the Moon and mapped its surface.",
+    "key_fact": "SMART-1 reached the Moon in 14 months using an efficient xenon-fueled ion drive.",
+    "achievements": [
+      "First European mission to the Moon",
+      "Demonstration of ion drives for interplanetary travel",
+      "X-ray and infrared mapping of the lunar surface"
+    ]
+  },
+  {
+    "slug": "kaguya",
+    "description": "Japan's largest lunar mission imaged the Moon with an HDTV camera and produced detailed gravitational and topographic maps.",
+    "key_fact": "Kaguya captured unique HDTV videos of \"Earthrise\" and \"Earthset\" above the lunar surface — some of the most beautiful views in the history of lunar missions.",
+    "achievements": [
+      "First HDTV footage of the Moon from space",
+      "Detailed gravity maps of the Moon's far side",
+      "Detection of lava tubes beneath the surface"
+    ]
+  },
+  {
+    "slug": "change-2",
+    "description": "China's second lunar mission mapped the Moon at higher resolution, then traveled to Lagrange point L2 and on to asteroid Toutatis.",
+    "key_fact": "After completing its lunar mission, Chang'e 2 flew past asteroid Toutatis at a distance of just 3.2 km.",
+    "achievements": [
+      "Lunar mapping at 7-meter resolution",
+      "First Chinese spacecraft flyby of an asteroid",
+      "Reached Lagrange point L2"
+    ]
+  },
+  {
+    "slug": "luna-25",
+    "description": "The first Russian lunar mission after a 47-year gap. An attempt to land near the Moon's south pole ended in a crash on August 19, 2023.",
+    "key_fact": "Luna 25 crashed just a few days before India's Chandrayaan-3 — the first Russian Moon mission since 1976 ended in failure.",
+    "achievements": [
+      "First Russian lunar mission in 47 years",
+      "Attempt at a pioneering landing near the south pole"
+    ]
+  },
+  {
+    "slug": "mariner-6",
+    "description": "Flew past Mars in July 1969 and returned 75 close-up images of the equatorial and southern regions.",
+    "key_fact": "Mariner 6 and Mariner 7 together photographed about 20% of the Martian surface, unfortunately choosing the most cratered, Moon-like areas.",
+    "achievements": [
+      "Detailed images of Mars's equatorial regions",
+      "Spectroscopic study of the atmosphere",
+      "Measurement of surface temperature and atmospheric composition"
+    ]
+  },
+  {
+    "slug": "capstone",
+    "description": "The first spacecraft to enter a near-rectilinear halo orbit (NRHO) around the Moon — the same orbit planned for the future lunar Gateway station.",
+    "key_fact": "This 12U CubeSat was the first to test a peer-to-peer navigation system with LRO, operating without input from ground stations.",
+    "achievements": [
+      "First spacecraft in an NRHO — the future Gateway station's orbit",
+      "Demonstration of autonomous satellite-to-satellite navigation",
+      "Proved the reliability of low-cost CubeSat solutions for the lunar program"
+    ]
+  },
+  {
+    "slug": "kplo-danuri",
+    "description": "South Korea's first spacecraft. A lunar orbiter carrying six scientific instruments, including NASA's ShadowCam for imaging permanently shadowed craters.",
+    "key_fact": "ShadowCam is 200 times more sensitive than a normal camera and captured the first detailed images of crater floors that never receive sunlight.",
+    "achievements": [
+      "First South Korean lunar mission",
+      "Mapping of permanently shadowed regions using ShadowCam",
+      "Technology demonstration for future South Korean lunar missions"
+    ]
+  },
+  {
+    "slug": "lucy",
+    "description": "The first mission to Jupiter's Trojan asteroids — groups of small bodies that share the gas giant's orbit. A record 11 asteroids to be visited over 12 years.",
+    "key_fact": "Named after the fossil of the australopithecine \"Lucy,\" because the Trojans are \"fossils\" of the early Solar System.",
+    "achievements": [
+      "First mission to Jupiter's Trojan asteroids",
+      "Record itinerary: 11 asteroids in a single mission",
+      "Flyby of asteroid Dinkinesh in 2023 — revealed a satellite"
+    ]
+  },
+  {
+    "slug": "psyche",
+    "description": "A mission to the metallic asteroid 16 Psyche — possibly an exposed iron-nickel core of a protoplanet, analogous to Earth's core. Arrival is planned for 2029.",
+    "key_fact": "If the asteroid Psyche were put up for sale, its metal content would be valued at 10 quintillion dollars — more than the world economy.",
+    "achievements": [
+      "First mission to an object composed primarily of metal",
+      "Use of Hall-effect thrusters (ion propulsion) for interplanetary travel",
+      "Demonstration of Deep Space Optical Communications via laser"
+    ]
+  },
+  {
+    "slug": "juice",
+    "description": "JUpiter ICy moons Explorer — Europe's first mission to Jupiter. It will study three icy moons (Ganymede, Europa, Callisto) and enter orbit around Ganymede in 2034.",
+    "key_fact": "JUICE will become the first spacecraft to orbit a moon of another planet — Ganymede, the largest moon in the Solar System.",
+    "achievements": [
+      "First European mission to the Jovian system",
+      "35 flybys of the icy moons for mapping",
+      "Orbital insertion at Ganymede — first spacecraft to orbit a moon beyond Earth's"
+    ]
+  },
+  {
+    "slug": "euclid",
+    "description": "An ESA space telescope mapping the large-scale structure of the Universe to study dark matter and dark energy. It will produce a 3D map of more than 1.5 billion galaxies.",
+    "key_fact": "Over 6 years Euclid will image a third of the entire sky — a wider survey than any previous astronomical program.",
+    "achievements": [
+      "Largest survey of the dark Universe in the history of astronomy",
+      "First images published in 2023 — unprecedented sharpness",
+      "Precise measurement of the dark energy equation-of-state parameter"
+    ]
+  },
+  {
+    "slug": "peregrine-1",
+    "description": "The first commercial lunar lander mission by Astrobotic Technology under the CLPS program. A propellant leak was detected just after launch, making a landing impossible.",
+    "key_fact": "Despite the failure, the spacecraft transmitted data for 10 days and carried out scientific measurements in interplanetary space.",
+    "achievements": [
+      "First launch under the CLPS (Commercial Lunar Payload Services) program",
+      "Scientific data collected despite a critical malfunction",
+      "Spacecraft burned up on reentry into Earth's atmosphere"
+    ]
+  },
+  {
+    "slug": "im-1-odysseus",
+    "description": "The first American landing on the Moon in 52 years (since Apollo 17 in 1972) and the world's first commercial lunar lander. It tipped over on landing but operated for several days.",
+    "key_fact": "Landed within a few kilometers of the Moon's south pole — closer to the pole than any previous landing in history.",
+    "achievements": [
+      "First American landing on the Moon since 1972",
+      "Southernmost lunar landing in history",
+      "First commercial spacecraft on the Moon's surface"
+    ]
+  },
+  {
+    "slug": "slim",
+    "description": "Smart Lander for Investigating Moon — Japan's first lunar lander. It achieved a pinpoint landing with an error of just ~55 m from the target, though it tipped over on touchdown.",
+    "key_fact": "SLIM's landing accuracy was 10 times better than previous missions — its \"pinpoint landing\" technology can target a specific boulder.",
+    "achievements": [
+      "Japan — fifth country to soft-land on the Moon",
+      "Most accurate lunar landing in history — 55-meter error",
+      "Deployed two mini-rovers: LEV-1 and LEV-2 (Sora-Q)"
+    ]
+  },
+  {
+    "slug": "change-6",
+    "description": "The first mission in history to return soil samples from the far side of the Moon — from the South Pole-Aitken basin, one of the oldest impact structures in the Solar System.",
+    "key_fact": "1,935 g of soil from the far side of the Moon: scientists are for the first time studying material from a location no human has ever visited.",
+    "achievements": [
+      "First sample return from the far side of the Moon",
+      "Landed in the Apollo basin within the South Pole-Aitken crater",
+      "Unfurled the Chinese flag on the Moon's far side"
+    ]
+  },
+  {
+    "slug": "europa-clipper",
+    "description": "NASA's largest interplanetary spacecraft. It will perform 49 close flybys of Europa to study the subsurface ocean and assess habitability. Arrival at Jupiter — April 2030.",
+    "key_fact": "Europa Clipper is one of NASA's largest science spacecraft: its solar arrays span as wide as a basketball court (30 meters).",
+    "achievements": [
+      "Largest NASA interplanetary probe",
+      "Gravity assist at Mars in March 2025",
+      "49 close flybys of Europa to study the subsurface ocean"
+    ]
+  },
+  {
+    "slug": "hera",
+    "description": "An ESA mission to the binary asteroid Didymos/Dimorphos — a follow-up to DART. It will study the impact aftermath and evaluate the effectiveness of kinetic impact as a planetary-defense technique.",
+    "key_fact": "Hera was the first spacecraft to fly past Mars specifically for a gravity assist toward an asteroid rather than toward the outer planets.",
+    "achievements": [
+      "First European planetary-defense mission",
+      "Flyby of Mars and its moons in March 2025",
+      "Will measure the exact size of the DART impact crater and the orbital change of Dimorphos"
+    ]
+  },
+  {
+    "slug": "osiris-apex",
+    "description": "The continuation of the OSIRIS-REx mission after the Bennu sample capsule was delivered. Retargeted to study the asteroid Apophis — which will pass within 32,000 km of Earth in April 2029.",
+    "key_fact": "Apophis will pass closer to Earth than geostationary satellites — an unprecedented chance to study an asteroid during a record-close approach.",
+    "achievements": [
+      "A second life for the spacecraft after successfully delivering Bennu samples",
+      "Gravity assist at Earth in November 2025 to set course for Apophis",
+      "Will rendezvous with Apophis during its historic close approach to Earth in 2029"
+    ]
+  },
+  {
+    "slug": "axiom-mission-2",
+    "description": "The second fully private crewed flight to the ISS. A crew of four, including Saudi Arabian astronauts, spent 10 days aboard the station.",
+    "key_fact": "The first Saudi astronaut to fly in space in 38 years, and the first Saudi woman astronaut.",
+    "achievements": [
+      "First Saudi woman astronaut in space",
+      "14 scientific experiments aboard the ISS",
+      "Mission spent 10 days aboard the ISS"
+    ]
+  },
+  {
+    "slug": "luna-1",
+    "description": "The first spacecraft in history to reach the vicinity of the Moon. It flew past at a distance of 5,995 km from the lunar surface on January 4, 1959, and entered heliocentric orbit.",
+    "key_fact": "Luna 1 was the first spacecraft to achieve escape velocity and leave Earth's sphere of influence — becoming the first artificial body in orbit around the Sun.",
+    "achievements": [
+      "First spacecraft to leave Earth's gravitational sphere",
+      "First flyby of the Moon",
+      "Discovery of the solar wind"
+    ]
+  },
+  {
+    "slug": "luna-2",
+    "description": "The first human-made object to reach the surface of another celestial body. It made a hard landing on the Moon on September 14, 1959.",
+    "key_fact": "Luna 2 confirmed that the Moon has no magnetic field and was the first human-made object to \"touch\" another celestial body.",
+    "achievements": [
+      "First spacecraft to reach the Moon's surface",
+      "First human-made object to reach another celestial body",
+      "Confirmed that the Moon has no magnetic field"
+    ]
+  },
+  {
+    "slug": "luna-3",
+    "description": "The first spacecraft to photograph the far side of the Moon. On October 7, 1959, it transmitted 17 images covering about 70% of the invisible hemisphere.",
+    "key_fact": "Humans saw the far side of the Moon for the first time thanks to Luna 3's images — it turned out to look nothing like the near side.",
+    "achievements": [
+      "First images of the Moon's far side",
+      "Pioneering technique for photographing and transmitting images in space",
+      "Discovery of significant morphological differences between the two lunar hemispheres"
+    ]
+  },
+  {
+    "slug": "vostok-6",
+    "description": "The spaceflight of Valentina Tereshkova — the first woman in space. On June 16-19, 1963, she completed 48 orbits around the Earth in 70 hours 50 minutes.",
+    "key_fact": "Tereshkova spent more time in space than all American astronauts combined at that point. She returned to Earth at the age of 26.",
+    "achievements": [
+      "First woman in space",
+      "Duration record for an orbital flight in the Vostok program",
+      "Joint flight with Vostok 5 — the first mission to fly two spacecraft together"
+    ]
+  },
+  {
+    "slug": "voskhod-1",
+    "description": "The first spaceflight with a crew of three. October 12-13, 1964: the cosmonauts flew without spacesuits because the cabin was too cramped to accommodate them.",
+    "key_fact": "The crew flew without spacesuits — a dangerous choice made for the sake of demonstrating Soviet primacy. It is the only crewed flight without spacesuits in the entire history of the Soviet program.",
+    "achievements": [
+      "First crew of three in space",
+      "First physician (Boris Yegorov) and first design engineer (Feoktistov) in space",
+      "First multi-seat spacecraft"
+    ]
+  },
+  {
+    "slug": "apollo-1",
+    "description": "The tragedy of January 27, 1967: a fire in the Apollo command module cabin during ground testing claimed the lives of three astronauts — Grissom, White, and Chaffee.",
+    "key_fact": "The crew's deaths led to an 18-month halt of the Apollo program and a fundamental redesign of the spacecraft. The tragedy made Apollo 11 possible.",
+    "achievements": [
+      "First NASA astronaut fatalities during flight preparation",
+      "Complete redesign of the Apollo spacecraft after the disaster",
+      "Fire-safety lessons that reshaped the entire space industry"
+    ]
+  },
+  {
+    "slug": "soyuz-1",
+    "description": "The first fatality occurring directly in flight. Vladimir Komarov perished on April 24, 1967, during landing after a failure of the parachute system.",
+    "key_fact": "Komarov knew about the spacecraft's defects before launch but did not refuse the flight. His last radio transmissions were recorded by American tracking stations.",
+    "achievements": [
+      "First cosmonaut fatality directly during a flight",
+      "Identified critical design flaws in the Soyuz",
+      "A lesson that led to an 18-month pause and a complete redesign of the spacecraft"
+    ]
+  },
+  {
+    "slug": "salyut-1",
+    "description": "The world's first space station. Launched on April 19, 1971. The Soyuz 11 crew spent a record 23 days aboard but died on re-entry due to depressurization.",
+    "key_fact": "The Soyuz 11 crew (Dobrovolsky, Volkov, Patsayev) died on re-entry: all three were without spacesuits when a docking valve depressurized.",
+    "achievements": [
+      "World's first space station",
+      "Duration record for a stay in space — 23 days (at the time)",
+      "Laid the foundation for long-duration station technologies"
+    ]
+  },
+  {
+    "slug": "mariner-10",
+    "description": "The first spacecraft to reach Mercury. It flew past the planet three times in 1974-1975 and photographed about 45% of the surface. First use of a gravity assist at Venus.",
+    "key_fact": "Mariner 10 was the first spacecraft to use a gravity slingshot at Venus to accelerate toward Mercury — a technique that became standard for interplanetary flight.",
+    "achievements": [
+      "First spacecraft at Mercury",
+      "First use of a planetary gravity assist",
+      "Mapping of 45% of Mercury's surface and discovery of its magnetic field"
+    ]
+  },
+  {
+    "slug": "apollo-soyuz",
+    "description": "The first joint Soviet-American space mission. Apollo and Soyuz 19 docked in orbit on July 17, 1975 — a symbol of detente during the Cold War.",
+    "key_fact": "Thomas Stafford and Alexei Leonov shook hands in orbit — the iconic image marking the end of the \"cold\" space race.",
+    "achievements": [
+      "First international docking in space (USSR + USA)",
+      "Joint scientific experiments by the two superpowers",
+      "Development of the shared APAS docking standard"
+    ]
+  },
+  {
+    "slug": "giotto",
+    "description": "The first European interplanetary mission. On March 14, 1986, it passed within 596 km of Halley's comet nucleus and captured the first detailed images of a comet nucleus.",
+    "key_fact": "Giotto flew through Halley's comet tail at 68 km/s and was damaged by dust, but it survived and was retargeted to comet Grigg-Skjellerup.",
+    "achievements": [
+      "First detailed images of Halley's comet nucleus",
+      "Discovery that a comet nucleus is dark and irregularly shaped",
+      "First European interplanetary mission"
+    ]
+  },
+  {
+    "slug": "cobe",
+    "description": "The Cosmic Background Explorer detected anisotropy in the cosmic microwave background — tiny temperature fluctuations from which all galaxies of the Universe grew. Nobel Prize in Physics in 2006.",
+    "key_fact": "Stephen Hawking called COBE's discovery \"the greatest discovery of the century, if not of all time.\" The data confirmed the Big Bang theory.",
+    "achievements": [
+      "Discovery of anisotropy in the cosmic microwave background",
+      "Nobel Prize in Physics in 2006 (Mather and Smoot)",
+      "Precise measurement of the CMB spectrum as a perfect black body"
+    ]
+  },
+  {
+    "slug": "stardust",
+    "description": "The first mission to return samples of cometary material to Earth. In 2004 the spacecraft flew through the coma of comet Wild 2 and collected thousands of particles.",
+    "key_fact": "Stardust's sample capsule landed in Utah in 2006 — the first return of non-lunar extraterrestrial material in 30 years.",
+    "achievements": [
+      "First return of cometary material samples",
+      "Detection of organic molecules and amino acids in a comet",
+      "Later retargeted to comet Tempel 1 (Stardust-NExT mission)"
+    ]
+  },
+  {
+    "slug": "wmap",
+    "description": "The Wilkinson Microwave Anisotropy Probe produced the most precise map of the cosmic microwave background, determining the age, composition, and geometry of the Universe. It operated at Lagrange point L2.",
+    "key_fact": "WMAP determined the age of the Universe to 1% precision: 13.77 +/- 0.059 billion years. It also established the composition: 4% ordinary matter, 23% dark matter, 73% dark energy.",
+    "achievements": [
+      "Most precise measurement of the age of the Universe — 13.77 billion years",
+      "Precise composition of the Universe: matter, dark matter, and dark energy",
+      "CMB map with an angular resolution of 0.2 degrees"
+    ]
+  },
+  {
+    "slug": "shenzhou-5",
+    "description": "China's first crewed spaceflight. On October 15-16, 2003, Yang Liwei completed 14 orbits around the Earth in 21 hours, making China the third country with an independent crewed program.",
+    "key_fact": "Yang Liwei became the first \"taikonaut\" — his flight showed that China was capable of sending humans into space on its own.",
+    "achievements": [
+      "China's first crewed spaceflight",
+      "China became the third country with an independent crewed program",
+      "Beginning of the Chinese era in space exploration"
+    ]
+  },
+  {
+    "slug": "spitzer",
+    "description": "NASA's infrared space telescope operated for 16 years. It observed star birth, planetary disks, exoplanets, and the most distant galaxies hidden behind dust.",
+    "key_fact": "Spitzer was the first to measure light from an exoplanet (hot Jupiter HD 209458b) and discovered a giant ring of Saturn 640 times wider than the visible rings.",
+    "achievements": [
+      "First direct detection of radiation from an exoplanet",
+      "Discovery of the largest known ring of Saturn",
+      "Mapping of dust clouds and star-forming regions"
+    ]
+  },
+  {
+    "slug": "deep-impact",
+    "description": "The first mission to deliberately collide a probe with a comet. On July 4, 2005, a 370-kg impactor slammed into comet Tempel 1, ejecting material from beneath the surface.",
+    "key_fact": "The impact explosion was visible from Earth to the naked eye in a dark sky. The ejected material made it possible to study the \"pristine\" composition of the comet's nucleus.",
+    "achievements": [
+      "First deliberate creation of a crater on a comet",
+      "Detection of water and organic molecules in the comet's interior",
+      "Proved the loose, porous structure of a comet nucleus"
+    ]
+  },
+  {
+    "slug": "dawn",
+    "description": "The first spacecraft to enter orbit around two extraterrestrial bodies: the asteroid Vesta (2011-2012) and the dwarf planet Ceres (2015-2018). It used ion propulsion.",
+    "key_fact": "Dawn discovered bright spots on Ceres — which turned out to be salt deposits from brine that had risen from below the surface. Liquid water may be present there.",
+    "achievements": [
+      "Only spacecraft to orbit two different celestial bodies",
+      "Detailed mapping of asteroid Vesta and dwarf planet Ceres",
+      "Discovery of Ceres's bright spots — possible signs of an internal briny ocean"
+    ]
+  },
+  {
+    "slug": "kepler",
+    "description": "The first telescope specifically designed to find exoplanets via the transit method. It discovered 2,600+ confirmed exoplanets and revolutionized our understanding of how common planets are in the Universe.",
+    "key_fact": "Kepler showed that most stars have planets, and that Earth-sized planets in habitable zones are quite common in our Galaxy.",
+    "achievements": [
+      "Discovery of 2,600+ confirmed exoplanets (70% of all known at the mission's end)",
+      "Proved that planets around stars are the rule, not the exception",
+      "First exoplanets in the \"habitable zone\" of their stars"
+    ]
+  },
+  {
+    "slug": "planck",
+    "description": "A European telescope for studying the cosmic microwave background at unprecedented angular resolution. It refined the age of the Universe and confirmed the standard cosmological model.",
+    "key_fact": "Planck produced a CMB map 10 times more precise than WMAP and found the mysterious \"cold spot\" — a possible trace of a collision with a parallel universe.",
+    "achievements": [
+      "Most precise CMB map — angular resolution of 5 arcminutes",
+      "Refined age of the Universe: 13.82 billion years",
+      "Confirmation of the standard Lambda-CDM cosmological model"
+    ]
+  },
+  {
+    "slug": "gaia",
+    "description": "ESA's astrometric observatory is producing the most precise catalog of stars in the Milky Way. It has measured the positions, distances, and motions of 1.8 billion stars in our Galaxy.",
+    "key_fact": "Thanks to Gaia we know the 3D structure of the Milky Way as never before: traces of absorbed dwarf galaxies have been found, and a collision with Andromeda has been predicted.",
+    "achievements": [
+      "Catalog of 1.8 billion stars with ultra-precise positions and distances",
+      "Three-dimensional map of the Milky Way",
+      "Discovery of the remnants of absorbed galaxies (Gaia-Enceladus)"
+    ]
+  },
+  {
+    "slug": "tess",
+    "description": "The Transiting Exoplanet Survey Satellite searches for exoplanets around bright nearby stars using the transit method. It is the all-sky successor to Kepler.",
+    "key_fact": "TESS surveys 85% of the entire sky — 400 times more area than Kepler. It has already found 7,300+ exoplanet candidates, of which 400+ are confirmed.",
+    "achievements": [
+      "Detection of 400+ confirmed exoplanets and 7,300+ candidates",
+      "Coverage of 85% of the entire sky",
+      "Search for planets around nearby, bright stars suitable for atmospheric analysis"
+    ]
+  },
+  {
+    "slug": "tiangong-css",
+    "description": "China's Tiangong orbital station — the third permanently inhabited station in history, after Mir and the ISS. The Tianhe core module was launched in April 2021.",
+    "key_fact": "Tiangong is the only orbital station fully built and operated by a single country with no partners on the ISS.",
+    "achievements": [
+      "Third permanently inhabited orbital station in history",
+      "A fully independent national station",
+      "Chinese taikonauts have been living and working aboard in rotations since 2021"
+    ]
+  },
+  {
+    "slug": "artemis-2",
+    "description": "The first crewed flight around the Moon in 54 years (since Apollo 17). A crew of four will make a 10-day flight around the Moon aboard Orion, breaking the distance record for human spaceflight.",
+    "key_fact": "The crew will travel farther than any human in history — 252,756 miles from Earth, breaking the Apollo 13 record from 1970.",
+    "achievements": [
+      "First crewed flight beyond low Earth orbit since 1972",
+      "First woman and first Black astronaut at the Moon",
+      "First Canadian (Jeremy Hansen) to fly around the Moon"
+    ]
+  }
+]

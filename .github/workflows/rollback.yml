@@ -1,0 +1,64 @@
+name: Rollback
+
+on:
+  workflow_dispatch:
+    inputs:
+      sha_short:
+        description: "7-char short SHA of a previously built image (leave empty to use .last-good-sha on VPS)"
+        required: false
+        type: string
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  BACKEND_IMAGE: ghcr.io/${{ github.repository }}/backend
+  FRONTEND_IMAGE: ghcr.io/${{ github.repository }}/frontend
+
+jobs:
+  rollback:
+    name: Manual rollback
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: ${{ vars.PRODUCTION_URL }}
+    steps:
+      - name: SSH rollback
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          script: |
+            set -euo pipefail
+            cd /opt/apps/cosmos
+
+            INPUT_SHA="${{ github.event.inputs.sha_short }}"
+            TARGET_SHA="${INPUT_SHA:-$(cat .last-good-sha 2>/dev/null || echo '')}"
+
+            if [ -z "$TARGET_SHA" ]; then
+              echo "FATAL: no target SHA provided and no .last-good-sha file found."
+              exit 2
+            fi
+
+            echo "Rolling back to $TARGET_SHA"
+
+            if grep -q '^IMAGE_TAG=' .env; then
+              sed -i "s|^IMAGE_TAG=.*|IMAGE_TAG=$TARGET_SHA|" .env
+            else
+              echo "IMAGE_TAG=$TARGET_SHA" >> .env
+            fi
+
+            docker pull ${{ env.BACKEND_IMAGE }}:"$TARGET_SHA"
+            docker pull ${{ env.FRONTEND_IMAGE }}:"$TARGET_SHA"
+            docker compose up -d --remove-orphans
+
+            sleep 20
+            docker compose exec -T frontend wget -qO- http://cosmos-api:8080/healthz >/dev/null
+            docker compose exec -T frontend wget -qO- http://127.0.0.1:3000/ >/dev/null
+
+            echo "rollback to $TARGET_SHA ok"

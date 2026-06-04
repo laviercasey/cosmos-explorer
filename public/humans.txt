@@ -1,0 +1,15 @@
+/* TEAM */
+Project: Cosmos Explorer
+Site:    https://cosmos.lavier.tech
+Contact: hello [at] cosmos.example
+
+/* STACK */
+Frontend:  React 19, TypeScript, Next.js 15 App Router
+3D:        Three.js r171 (WebGL 2.0)
+i18n:      next-intl (en, ru)
+PWA:       @serwist/next + Workbox
+Backend:   Go + PostgreSQL
+
+/* THANKS */
+NASA, ESA, Roscosmos — for decades of open data.
+Three.js, React, Next.js and next-intl teams — for the tools.

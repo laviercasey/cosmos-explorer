@@ -1,0 +1,165 @@
+name: cosmos
+
+services:
+
+  db:
+    image: postgres:16-alpine
+    container_name: cosmos-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - cosmos_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    networks:
+      - cosmos_net
+
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: cosmos-api:local
+    container_name: cosmos-api
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      APP_ENV: ${APP_ENV:-development}
+      HTTP_ADDR: ${HTTP_ADDR:-:8080}
+      DATABASE_URL: ${DATABASE_URL}
+      DB_MAX_CONNS: ${DB_MAX_CONNS:-10}
+      DB_MIN_CONNS: ${DB_MIN_CONNS:-2}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      CORS_ALLOWED_ORIGINS: ${CORS_ALLOWED_ORIGINS:-}
+      CORS_ORIGINS: ${CORS_ORIGINS:-}
+      MIGRATE_ON_BOOT: ${MIGRATE_ON_BOOT:-true}
+      REQUEST_TIMEOUT: ${REQUEST_TIMEOUT:-10s}
+      READ_TIMEOUT: ${READ_TIMEOUT:-15s}
+      WRITE_TIMEOUT: ${WRITE_TIMEOUT:-15s}
+    ports:
+      - "${API_PORT:-8080}:8080"
+    networks:
+      - cosmos_net
+
+  migrate:
+    image: cosmos-api:local
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: cosmos-migrate
+    profiles: ["tools"]
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    entrypoint: ["/app/server"]
+    command: ["--migrate-up-only"]
+    restart: "no"
+    networks:
+      - cosmos_net
+
+  seed:
+    image: cosmos-api:local
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: cosmos-seed
+    profiles: ["tools"]
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      SEED_SOURCE_DIR: /data/entities
+    entrypoint: ["/app/seed"]
+    volumes:
+      - ./backend/seed/data:/data/entities:ro
+    restart: "no"
+    networks:
+      - cosmos_net
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3000}
+        NEXT_PUBLIC_API_BASE_URL: ${NEXT_PUBLIC_API_BASE_URL:-http://localhost:8080}
+        NEXT_PUBLIC_API_ORIGIN: ${NEXT_PUBLIC_API_ORIGIN:-http://localhost:8080}
+        NEXT_PUBLIC_GOOGLE_VERIFICATION: ${NEXT_PUBLIC_GOOGLE_VERIFICATION:-}
+        NEXT_PUBLIC_YANDEX_VERIFICATION: ${NEXT_PUBLIC_YANDEX_VERIFICATION:-}
+        NEXT_PUBLIC_YANDEX_METRIKA_ID: ${NEXT_PUBLIC_YANDEX_METRIKA_ID:-}
+        NEXT_PUBLIC_GA4_ID: ${NEXT_PUBLIC_GA4_ID:-}
+        NEXT_PUBLIC_UMAMI_SRC: ${NEXT_PUBLIC_UMAMI_SRC:-}
+        NEXT_PUBLIC_UMAMI_WEBSITE_ID: ${NEXT_PUBLIC_UMAMI_WEBSITE_ID:-}
+        NEXT_PUBLIC_UMAMI_ALLOWED_HOSTS: ${NEXT_PUBLIC_UMAMI_ALLOWED_HOSTS:-}
+    image: cosmos-frontend:local
+    container_name: cosmos-frontend
+    restart: unless-stopped
+    depends_on:
+      - api
+    environment:
+      NODE_ENV: production
+      HOSTNAME: 0.0.0.0
+      PORT: 3000
+      API_INTERNAL_URL: ${API_INTERNAL_URL:-http://cosmos-api:8080}
+      REVALIDATE_SECRET: ${REVALIDATE_SECRET:-}
+      NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3000}
+      NEXT_PUBLIC_API_BASE_URL: ${NEXT_PUBLIC_API_BASE_URL:-http://localhost:8080}
+      NEXT_PUBLIC_API_ORIGIN: ${NEXT_PUBLIC_API_ORIGIN:-http://localhost:8080}
+      NEXT_PUBLIC_GOOGLE_VERIFICATION: ${NEXT_PUBLIC_GOOGLE_VERIFICATION:-}
+      NEXT_PUBLIC_YANDEX_VERIFICATION: ${NEXT_PUBLIC_YANDEX_VERIFICATION:-}
+      NEXT_PUBLIC_YANDEX_METRIKA_ID: ${NEXT_PUBLIC_YANDEX_METRIKA_ID:-}
+      NEXT_PUBLIC_GA4_ID: ${NEXT_PUBLIC_GA4_ID:-}
+      NEXT_PUBLIC_UMAMI_SRC: ${NEXT_PUBLIC_UMAMI_SRC:-}
+      NEXT_PUBLIC_UMAMI_WEBSITE_ID: ${NEXT_PUBLIC_UMAMI_WEBSITE_ID:-}
+      NEXT_PUBLIC_UMAMI_ALLOWED_HOSTS: ${NEXT_PUBLIC_UMAMI_ALLOWED_HOSTS:-}
+    ports:
+      - "${FRONTEND_PORT:-3000}:3000"
+    networks:
+      - cosmos_net
+
+  web:
+    image: node:22-alpine
+    container_name: cosmos-web
+    profiles: ["dev-frontend"]
+    working_dir: /app
+    command: ["sh", "-c", "npm install --no-audit --no-fund --legacy-peer-deps && npm run dev -- -H 0.0.0.0 -p 3000"]
+    environment:
+      NODE_ENV: development
+      NEXT_TELEMETRY_DISABLED: "1"
+      NEXT_PUBLIC_API_BASE_URL: ${NEXT_PUBLIC_API_BASE_URL:-http://localhost:8080}
+      NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3000}
+      API_INTERNAL_URL: ${API_INTERNAL_URL:-http://cosmos-api:8080}
+    ports:
+      - "${WEB_PORT:-3000}:3000"
+    volumes:
+      - ./:/app
+      - /app/node_modules
+      - /app/.next
+    depends_on:
+      - api
+    networks:
+      - cosmos_net
+
+volumes:
+  cosmos_pgdata:
+    name: cosmos_pgdata
+
+networks:
+  cosmos_net:
+    name: cosmos_net
+    driver: bridge

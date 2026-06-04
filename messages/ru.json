@@ -1,0 +1,70 @@
+{
+  "Common": {
+    "appTitle": "COSMOS EXPLORER",
+    "appSubtitle": "СИМУЛЯЦИЯ СОЛНЕЧНОЙ СИСТЕМЫ",
+    "missionsBtn_open": "✕ МИССИИ",
+    "missionsBtn_closed": "✦ МИССИИ",
+    "backBtn": "← СОЛНЕЧНАЯ СИСТЕМА",
+    "introTitle": "ИССЛЕДУЙ СОЛНЕЧНУЮ СИСТЕМУ",
+    "introHint": "тяни для поворота · колесо для зума · клик на планету",
+    "controls": ["ТЯНИ · ПОВОРОТ", "КОЛЕСО · ЗУММ", "КЛИК · ИЗУЧАЙ"],
+
+    "timeScale": "СКОРОСТЬ ВРЕМЕНИ",
+    "pauseTitle": "Пауза",
+    "resumeTitle": "Продолжить",
+
+    "misTitle": "✦ МИССИИ В КОСМОС",
+    "misSubtitle": "ЭНЦИКЛОПЕДИЯ",
+    "filterDecade": "ДЕСЯТИЛЕТИЕ",
+    "filterAgency": "АГЕНТСТВО",
+    "filterDest": "НАПРАВЛЕНИЕ",
+    "filterType": "ТИП",
+    "searchPh": "ПОИСК МИССИЙ...",
+    "resetBtn": "СБРОС",
+    "showing": "ПОКАЗАНО {n} ИЗ {total} МИССИЙ",
+    "misLoading": "ЗАГРУЗКА ДАННЫХ...",
+    "misNoMatch": "МИССИИ НЕ НАЙДЕНЫ",
+    "achievements": "ДОСТИЖЕНИЯ",
+    "crew": "ЭКИПАЖ:",
+    "detailsBtn": "▼ ПОДРОБНЕЕ",
+    "collapseBtn": "▲ СВЕРНУТЬ",
+
+    "tabOverview": "ОБЗОР",
+    "tabAtmosphere": "АТМОСФЕРА",
+    "tabMoons": "СПУТНИКИ",
+    "tabMissions": "МИССИИ",
+
+    "keyFacts": "КЛЮЧЕВЫЕ ФАКТЫ",
+    "statRadius": "Радиус",
+    "statMass": "Масса",
+    "statGravity": "Гравитация",
+    "statEscape": "Скорость выхода",
+    "statDay": "Длина дня",
+    "statYear": "Длина года",
+    "statTemp": "Ср. температура",
+    "statAlbedo": "Альбедо",
+    "unitEarthMass": "масс Земли",
+    "unitEarthDays": "дней Земли",
+    "retrograde": "(ретроградное)",
+
+    "surfacePressure": "ДАВЛЕНИЕ НА ПОВЕРХНОСТИ",
+    "greenhouse": "ПАРНИКОВЫЙ ЭФФЕКТ",
+    "ghYes": "ДА",
+    "ghNo": "НЕТ",
+    "composition": "СОСТАВ АТМОСФЕРЫ",
+    "notes": "ПРИМЕЧАНИЯ",
+    "traceNone": "СЛЕДЫ / НЕТ",
+
+    "knownMoons": "ИЗВЕСТНЫХ СПУТНИКОВ",
+    "moonDistance": "РАССТОЯНИЕ",
+    "moonPeriod": "ПЕРИОД",
+    "moonDays": "дней",
+    "noSatellites": "Естественных спутников нет",
+
+    "noMissionData": "Нет данных о миссиях",
+
+    "typeTerrestrial": "КАМЕННАЯ ПЛАНЕТА",
+    "typeGasGiant": "ГАЗОВЫЙ ГИГАНТ",
+    "typeIceGiant": "ЛЕДЯНОЙ ГИГАНТ"
+  }
+}

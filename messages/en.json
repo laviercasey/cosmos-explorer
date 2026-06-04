@@ -1,0 +1,70 @@
+{
+  "Common": {
+    "appTitle": "COSMOS EXPLORER",
+    "appSubtitle": "SOLAR SYSTEM SIMULATION",
+    "missionsBtn_open": "✕ MISSIONS",
+    "missionsBtn_closed": "✦ MISSIONS",
+    "backBtn": "← SOLAR SYSTEM",
+    "introTitle": "EXPLORE THE SOLAR SYSTEM",
+    "introHint": "drag to rotate · scroll to zoom · click planet to fly",
+    "controls": ["DRAG · ROTATE", "SCROLL · ZOOM", "CLICK · EXPLORE"],
+
+    "timeScale": "TIME SCALE",
+    "pauseTitle": "Pause",
+    "resumeTitle": "Resume",
+
+    "misTitle": "✦ SPACE MISSIONS",
+    "misSubtitle": "ENCYCLOPEDIA",
+    "filterDecade": "DECADE",
+    "filterAgency": "AGENCY",
+    "filterDest": "DESTINATION",
+    "filterType": "TYPE",
+    "searchPh": "SEARCH MISSIONS...",
+    "resetBtn": "RESET",
+    "showing": "SHOWING {n} OF {total} MISSIONS",
+    "misLoading": "MISSION DATA LOADING...",
+    "misNoMatch": "NO MISSIONS MATCH FILTERS",
+    "achievements": "ACHIEVEMENTS",
+    "crew": "CREW:",
+    "detailsBtn": "▼ DETAILS",
+    "collapseBtn": "▲ COLLAPSE",
+
+    "tabOverview": "OVERVIEW",
+    "tabAtmosphere": "ATMOSPHERE",
+    "tabMoons": "MOONS",
+    "tabMissions": "MISSIONS",
+
+    "keyFacts": "KEY FACTS",
+    "statRadius": "Radius",
+    "statMass": "Mass",
+    "statGravity": "Gravity",
+    "statEscape": "Escape Vel.",
+    "statDay": "Day",
+    "statYear": "Year",
+    "statTemp": "Avg Temp",
+    "statAlbedo": "Albedo",
+    "unitEarthMass": "Earth masses",
+    "unitEarthDays": "Earth days",
+    "retrograde": "(retrograde)",
+
+    "surfacePressure": "SURFACE PRESSURE",
+    "greenhouse": "GREENHOUSE EFFECT",
+    "ghYes": "YES",
+    "ghNo": "NO",
+    "composition": "COMPOSITION",
+    "notes": "NOTES",
+    "traceNone": "TRACE / NONE",
+
+    "knownMoons": "KNOWN MOONS",
+    "moonDistance": "DISTANCE",
+    "moonPeriod": "PERIOD",
+    "moonDays": "days",
+    "noSatellites": "No known natural satellites",
+
+    "noMissionData": "No mission data available",
+
+    "typeTerrestrial": "TERRESTRIAL",
+    "typeGasGiant": "GAS GIANT",
+    "typeIceGiant": "ICE GIANT"
+  }
+}

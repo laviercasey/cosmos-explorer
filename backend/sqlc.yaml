@@ -1,0 +1,36 @@
+version: "2"
+sql:
+  - engine: "postgresql"
+    queries: "queries/"
+    schema: "migrations/"
+    gen:
+      go:
+        package: "store"
+        out: "internal/store"
+        sql_package: "pgx/v5"
+        emit_interface: true
+        emit_json_tags: false
+        emit_prepared_queries: false
+        emit_db_tags: false
+        emit_empty_slices: true
+        overrides:
+          - column: "planets.facts"
+            go_type: "[]string"
+          - column: "planets.surface_features"
+            go_type: "[]string"
+          - column: "missions.achievements"
+            go_type: "[]string"
+          - column: "missions.crew"
+            go_type: "[]string"
+          - column: "planets.canvas_texture"
+            go_type: "encoding/json.RawMessage"
+          - column: "planets.ring_data"
+            go_type:
+              type: "encoding/json.RawMessage"
+              nullable: true
+          - column: "trajectories.waypoints"
+            go_type: "encoding/json.RawMessage"
+          - column: "trajectories.phases"
+            go_type: "encoding/json.RawMessage"
+          - column: "trajectories.moon_pos"
+            go_type: "encoding/json.RawMessage"

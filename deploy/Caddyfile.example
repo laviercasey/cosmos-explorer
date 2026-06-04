@@ -1,0 +1,59 @@
+cosmos.lavier.tech {
+	encode zstd gzip
+
+	@ws {
+		path /ws/*
+	}
+	reverse_proxy @ws cosmos-api:8080 {
+		header_up Connection {>Connection}
+		header_up Upgrade {>Upgrade}
+	}
+
+	@rpc {
+		path /cosmos.v1.* /cosmos.v1.CosmosService/*
+	}
+	reverse_proxy @rpc cosmos-api:8080
+
+	reverse_proxy cosmos-frontend:3000
+
+	header {
+		Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+		X-Robots-Tag "index, follow"
+		-Server
+	}
+
+	log {
+		output file /data/logs/cosmos.log {
+			roll_size 10mb
+			roll_keep 5
+		}
+		format json
+	}
+}
+
+next.cosmos.lavier.tech {
+	encode zstd gzip
+
+	@ws {
+		path /ws/*
+	}
+	reverse_proxy @ws cosmos-api-canary:8080 {
+		header_up Connection {>Connection}
+		header_up Upgrade {>Upgrade}
+	}
+
+	@rpc {
+		path /cosmos.v1.* /cosmos.v1.CosmosService/*
+	}
+	reverse_proxy @rpc cosmos-api-canary:8080
+
+	reverse_proxy cosmos-frontend-canary:3000
+
+	log {
+		output file /data/logs/cosmos-canary.log {
+			roll_size 10mb
+			roll_keep 5
+		}
+		format json
+	}
+}

@@ -1,0 +1,257 @@
+syntax = "proto3";
+
+package cosmos.v1;
+
+
+message ListResponseMeta {
+  int32 total = 1;
+  int32 limit = 2;
+  int32 offset = 3;
+}
+
+
+message OrbitalParams {
+  double semi_major_axis_au = 1;
+  double eccentricity = 2;
+  double inclination_deg = 3;
+  double period_days = 4;
+  double orbital_speed_km_s = 5;
+}
+
+message PhysicalParams {
+  double radius_km = 1;
+  double mass_kg = 2;
+  double mass_earths = 3;
+  double surface_gravity_m_s2 = 4;
+  double escape_velocity_km_s = 5;
+  double density_g_cm3 = 6;
+  double obliquity_deg = 7;
+  double rotation_period_hours = 8;
+  double flattening_factor = 9;
+}
+
+message ThermalParams {
+  int32 temp_min_c = 1;
+  int32 temp_max_c = 2;
+  int32 temp_avg_c = 3;
+  double albedo = 4;
+}
+
+message AtmosphereComponent {
+  string gas = 1;
+  double percent = 2;
+}
+
+message Atmosphere {
+  double surface_pressure_atm = 1;
+  bool has_greenhouse = 2;
+  string notes = 3;
+  repeated AtmosphereComponent composition = 4;
+}
+
+message RingBand {
+  string color = 1;
+  double start = 2;
+  double end = 3;
+  double opacity = 4;
+}
+
+message RingData {
+  double inner_radius_scale = 1;
+  double outer_radius_scale = 2;
+  repeated RingBand bands = 3;
+}
+
+message CanvasTexture {
+  string technique = 1;
+  repeated string palette = 2;
+  double noise_scale = 3;
+  double crater_density = 4;
+  optional double cloud_density = 5;
+  optional int32 storm_count = 6;
+  optional int32 band_count = 7;
+}
+
+message Visual {
+  string color_hex = 1;
+  string emissive_hex = 2;
+  double roughness = 3;
+  double metalness = 4;
+  bool has_atmosphere_glow = 5;
+  optional string atmosphere_color_hex = 6;
+  double atmosphere_opacity = 7;
+  bool has_cloud_layer = 8;
+  optional string cloud_color_hex = 9;
+  bool has_rings = 10;
+  optional RingData ring_data = 11;
+  double visual_radius = 12;
+  double orbit_distance = 13;
+  optional CanvasTexture canvas_texture = 14;
+}
+
+message Moon {
+  string name = 1;
+  double radius_km = 2;
+  double distance_km = 3;
+  double period_days = 4;
+  string discovered_by = 5;
+  int32 discovered_year = 6;
+  string description = 7;
+}
+
+message PlanetMissionRef {
+  string slug = 1;
+  string name = 2;
+  string agency = 3;
+  int32 year = 4;
+  string type = 5;
+  string achievement = 6;
+}
+
+message Planet {
+  string slug = 1;
+  string name = 2;
+  int32 index = 3;
+  string type = 4;
+  string description = 5;
+  OrbitalParams orbital = 6;
+  PhysicalParams physical = 7;
+  ThermalParams thermal = 8;
+  Atmosphere atmosphere = 9;
+  Visual visual = 10;
+  repeated string surface_features = 11;
+  repeated string facts = 12;
+  repeated Moon moons = 13;
+  int32 total_moon_count = 14;
+  repeated string mission_slugs = 15;
+  repeated PlanetMissionRef missions = 16;
+}
+
+
+message PlanetRef {
+  string slug = 1;
+  string name = 2;
+}
+
+message Mission {
+  string slug = 1;
+  string name = 2;
+  string agency = 3;
+  string country = 4;
+  int32 year = 5;
+  optional int32 end_year = 6;
+  string destination = 7;
+  string type = 8;
+  string status = 9;
+  string description = 10;
+  string key_fact = 11;
+  repeated string crew = 12;
+  repeated string achievements = 13;
+  repeated string planet_slugs = 14;
+  repeated PlanetRef planets = 15;
+  optional Trajectory trajectory = 16;
+}
+
+message TrajectoryPhase {
+  string id = 1;
+  string label = 2;
+  double t_start = 3;
+  double t_end = 4;
+  string description = 5;
+}
+
+message TrajectoryWaypoint {
+  double x = 1;
+  double y = 2;
+  double z = 3;
+}
+
+message Trajectory {
+  string mission_slug = 1;
+  string mission_name = 2;
+  string agency = 3;
+  int32 year = 4;
+  string duration = 5;
+  optional string duration_ru = 6;
+  repeated string crew = 7;
+  TrajectoryWaypoint moon_pos = 8;
+  double moon_orbit_arc = 9;
+  int32 sim_duration_s = 10;
+  repeated TrajectoryWaypoint waypoints = 11;
+  repeated TrajectoryPhase phases = 12;
+}
+
+
+message ListPlanetsRequest {
+  repeated string types = 1;
+  string sort = 2;
+  int32 limit = 3;
+  int32 offset = 4;
+  string lang = 5;
+}
+
+message ListPlanetsResponse {
+  repeated Planet planets = 1;
+  ListResponseMeta meta = 2;
+}
+
+message GetPlanetRequest {
+  string slug = 1;
+  string lang = 2;
+}
+
+message GetPlanetResponse {
+  Planet planet = 1;
+}
+
+message ListMissionsRequest {
+  repeated string agencies = 1;
+  repeated string decades = 2;
+  repeated string destinations = 3;
+  repeated string types = 4;
+  repeated string statuses = 5;
+  string sort = 6;
+  int32 limit = 7;
+  int32 offset = 8;
+  string lang = 9;
+}
+
+message ListMissionsResponse {
+  repeated Mission missions = 1;
+  ListResponseMeta meta = 2;
+}
+
+message GetMissionRequest {
+  string slug = 1;
+  string lang = 2;
+}
+
+message GetMissionResponse {
+  Mission mission = 1;
+}
+
+message ListTrajectoriesRequest {
+  string lang = 1;
+}
+
+message ListTrajectoriesResponse {
+  repeated Trajectory trajectories = 1;
+}
+
+message GetMissionTrajectoryRequest {
+  string slug = 1;
+  string lang = 2;
+}
+
+message GetMissionTrajectoryResponse {
+  Trajectory trajectory = 1;
+}
+
+service CosmosService {
+  rpc ListPlanets(ListPlanetsRequest) returns (ListPlanetsResponse);
+  rpc GetPlanet(GetPlanetRequest) returns (GetPlanetResponse);
+  rpc ListMissions(ListMissionsRequest) returns (ListMissionsResponse);
+  rpc GetMission(GetMissionRequest) returns (GetMissionResponse);
+  rpc ListTrajectories(ListTrajectoriesRequest) returns (ListTrajectoriesResponse);
+  rpc GetMissionTrajectory(GetMissionTrajectoryRequest) returns (GetMissionTrajectoryResponse);
+}

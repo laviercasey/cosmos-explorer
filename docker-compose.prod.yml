@@ -1,0 +1,78 @@
+name: cosmos
+
+services:
+  db:
+    restart: always
+    ports: []
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    networks:
+      - cosmos_net
+
+  api:
+    image: ${IMAGE_PREFIX}/backend:${IMAGE_TAG:-latest}
+    restart: always
+    environment:
+      APP_ENV: production
+      MIGRATE_ON_BOOT: ${MIGRATE_ON_BOOT:-false}
+    ports: []
+    networks:
+      - cosmos_net
+      - caddy-net
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  migrate:
+    image: ${IMAGE_PREFIX}/backend:${IMAGE_TAG:-latest}
+    networks:
+      - cosmos_net
+
+  seed:
+    image: ${IMAGE_PREFIX}/backend:${IMAGE_TAG:-latest}
+    environment:
+      SEED_SOURCE_DIR: /data/entities
+    volumes: []
+    networks:
+      - cosmos_net
+
+  frontend:
+    image: ${IMAGE_PREFIX}/frontend:${IMAGE_TAG:-latest}
+    restart: always
+    environment:
+      NODE_ENV: production
+      HOSTNAME: 0.0.0.0
+      PORT: 3000
+      API_INTERNAL_URL: ${API_INTERNAL_URL:-http://cosmos-api:8080}
+      REVALIDATE_SECRET: ${REVALIDATE_SECRET:-}
+      NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-https://cosmos.lavier.tech}
+      NEXT_PUBLIC_API_BASE_URL: ${NEXT_PUBLIC_API_BASE_URL:-https://cosmos.lavier.tech}
+      NEXT_PUBLIC_API_ORIGIN: ${NEXT_PUBLIC_API_ORIGIN:-https://cosmos.lavier.tech}
+      NEXT_PUBLIC_GOOGLE_VERIFICATION: ${NEXT_PUBLIC_GOOGLE_VERIFICATION:-}
+      NEXT_PUBLIC_YANDEX_VERIFICATION: ${NEXT_PUBLIC_YANDEX_VERIFICATION:-}
+      NEXT_PUBLIC_YANDEX_METRIKA_ID: ${NEXT_PUBLIC_YANDEX_METRIKA_ID:-}
+      NEXT_PUBLIC_GA4_ID: ${NEXT_PUBLIC_GA4_ID:-}
+      NEXT_PUBLIC_UMAMI_SRC: ${NEXT_PUBLIC_UMAMI_SRC:-}
+      NEXT_PUBLIC_UMAMI_WEBSITE_ID: ${NEXT_PUBLIC_UMAMI_WEBSITE_ID:-}
+      NEXT_PUBLIC_UMAMI_ALLOWED_HOSTS: ${NEXT_PUBLIC_UMAMI_ALLOWED_HOSTS:-}
+    ports: []
+    depends_on:
+      - api
+    networks:
+      - cosmos_net
+      - caddy-net
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+networks:
+  caddy-net:
+    external: true
+    name: caddy-net
