@@ -1,21 +1,6 @@
 cosmos.lavier.tech {
 	encode zstd gzip
 
-	@ws {
-		path /ws/*
-	}
-	reverse_proxy @ws cosmos-api:8080 {
-		header_up Connection {>Connection}
-		header_up Upgrade {>Upgrade}
-	}
-
-	@rpc {
-		path /cosmos.v1.* /cosmos.v1.CosmosService/*
-	}
-	reverse_proxy @rpc cosmos-api:8080
-
-	reverse_proxy cosmos-frontend:3000
-
 	header {
 		Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
 		X-Robots-Tag "index, follow"
@@ -29,25 +14,33 @@ cosmos.lavier.tech {
 		}
 		format json
 	}
+
+	@ws path /ws/*
+	handle @ws {
+		reverse_proxy cosmos-api:8080
+	}
+
+	@rpc path /cosmos.v1.* /cosmos.v1.CosmosService/*
+	handle @rpc {
+		reverse_proxy cosmos-api:8080
+	}
+
+	@health path /healthz
+	handle @health {
+		reverse_proxy cosmos-api:8080
+	}
+
+	handle {
+		reverse_proxy cosmos-frontend:3000 {
+			header_up X-Real-IP {remote_host}
+			header_up X-Forwarded-Host {host}
+			header_up X-Forwarded-Port 443
+		}
+	}
 }
 
 next.cosmos.lavier.tech {
 	encode zstd gzip
-
-	@ws {
-		path /ws/*
-	}
-	reverse_proxy @ws cosmos-api-canary:8080 {
-		header_up Connection {>Connection}
-		header_up Upgrade {>Upgrade}
-	}
-
-	@rpc {
-		path /cosmos.v1.* /cosmos.v1.CosmosService/*
-	}
-	reverse_proxy @rpc cosmos-api-canary:8080
-
-	reverse_proxy cosmos-frontend-canary:3000
 
 	log {
 		output file /data/logs/cosmos-canary.log {
@@ -55,5 +48,28 @@ next.cosmos.lavier.tech {
 			roll_keep 5
 		}
 		format json
+	}
+
+	@ws path /ws/*
+	handle @ws {
+		reverse_proxy cosmos-api-canary:8080
+	}
+
+	@rpc path /cosmos.v1.* /cosmos.v1.CosmosService/*
+	handle @rpc {
+		reverse_proxy cosmos-api-canary:8080
+	}
+
+	@health path /healthz
+	handle @health {
+		reverse_proxy cosmos-api-canary:8080
+	}
+
+	handle {
+		reverse_proxy cosmos-frontend-canary:3000 {
+			header_up X-Real-IP {remote_host}
+			header_up X-Forwarded-Host {host}
+			header_up X-Forwarded-Port 443
+		}
 	}
 }
