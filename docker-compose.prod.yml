@@ -37,7 +37,6 @@ services:
     image: ${IMAGE_PREFIX}/backend:${IMAGE_TAG:-latest}
     environment:
       SEED_SOURCE_DIR: /data/entities
-    volumes: []
     networks:
       - cosmos_net
 
