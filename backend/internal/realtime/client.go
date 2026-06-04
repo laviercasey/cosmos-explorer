@@ -2,7 +2,6 @@ package realtime
 
 import (
 	"context"
-	"errors"
 	"fmt"
 	"time"
 
@@ -71,5 +70,3 @@ func (c *client) closeWithBye(parent context.Context, reason string, status webs
 	}
 	_ = c.conn.Close(status, msg)
 }
-
-var errClosed = errors.New("client closed")

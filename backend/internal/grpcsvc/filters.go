@@ -136,10 +136,7 @@ func parseSort(raw string, allowed []string, fields []domain.FieldError) (string
 	if raw == "" {
 		return "", fields
 	}
-	field := raw
-	if strings.HasPrefix(field, "-") {
-		field = field[1:]
-	}
+	field := strings.TrimPrefix(raw, "-")
 	for _, a := range allowed {
 		if field == a {
 			return raw, fields
