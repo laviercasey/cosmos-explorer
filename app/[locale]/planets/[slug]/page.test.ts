@@ -127,14 +127,15 @@ describe('app/[locale]/planets/[slug] generateMetadata', () => {
     expect(desc).toMatch(/диаметр/);
   });
 
-  it('throws notFound when the planet is not found', async () => {
+  it('returns a noindex fallback when the planet is not found', async () => {
     fetchPlanetServer.mockResolvedValue(null);
 
-    await expect(
-      pageModule.generateMetadata({
-        params: Promise.resolve({ locale: 'en', slug: 'doesnotexist' }),
-      }),
-    ).rejects.toThrow('NEXT_NOT_FOUND');
+    const meta = await pageModule.generateMetadata({
+      params: Promise.resolve({ locale: 'en', slug: 'doesnotexist' }),
+    });
+
+    expect(meta.title).toBe('Planet not found');
+    expect(meta.robots).toEqual({ index: false, follow: false });
   });
 });
 

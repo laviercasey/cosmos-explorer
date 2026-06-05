@@ -9,7 +9,7 @@ import { buildSeoMeta, getSiteUrl, planetJsonLd, safeJsonLd } from '@shared/seo'
 import { routing } from '@i18n/routing';
 
 export const revalidate = 86400;
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 type Lang = 'en' | 'ru';
 
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: PlanetDetailProps): Promise<M
   const lang = asLang(locale);
   const planet = await fetchPlanetServer({ slug, lang: locale });
   if (!planet) {
-    notFound();
+    return { title: 'Planet not found', robots: { index: false, follow: false } };
   }
   return buildSeoMeta({ lang, selectedPlanet: planet, siteUrl: getSiteUrl() });
 }

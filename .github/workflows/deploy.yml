@@ -263,7 +263,9 @@ jobs:
             HEALTHY=0
             while [ "$(date +%s)" -lt "$DEADLINE" ]; do
               if docker compose exec -T frontend wget -qO- http://cosmos-api:8080/healthz >/dev/null 2>&1 \
-                 && docker compose exec -T frontend wget -qO- http://127.0.0.1:3000/ >/dev/null 2>&1; then
+                 && docker compose exec -T frontend wget -qO- http://127.0.0.1:3000/ >/dev/null 2>&1 \
+                 && docker compose exec -T frontend wget -qO- http://127.0.0.1:3000/en/planets/mercury >/dev/null 2>&1 \
+                 && docker compose exec -T frontend wget -qO- http://127.0.0.1:3000/ru/missions/apollo-11 >/dev/null 2>&1; then
                 HEALTHY=1
                 break
               fi
@@ -285,10 +287,21 @@ jobs:
               for path in /en /ru /en/planets /ru/planets /en/missions /ru/missions; do
                 docker compose exec -T frontend wget -qO /dev/null "http://127.0.0.1:3000$path" || true
               done
-              echo "marking $NEW_SHA as last-good"
-              echo "$NEW_SHA" > .last-good-sha
-              docker image prune -f
-              exit 0
+              POSTWARM_OK=1
+              for path in /en/planets/mercury /ru/missions/apollo-11; do
+                if ! docker compose exec -T frontend wget -qO /dev/null "http://127.0.0.1:3000$path" 2>/dev/null; then
+                  POSTWARM_OK=0
+                fi
+              done
+              if [ "$POSTWARM_OK" -ne 1 ]; then
+                echo "ERROR: entity pages broken after ISR warm-up"
+                HEALTHY=0
+              else
+                echo "marking $NEW_SHA as last-good"
+                echo "$NEW_SHA" > .last-good-sha
+                docker image prune -f
+                exit 0
+              fi
             fi
 
             echo "ERROR: deploy failed health-gate. Rolling back to ${PREV_SHA:-<none>}..."

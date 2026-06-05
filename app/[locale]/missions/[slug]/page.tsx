@@ -9,7 +9,7 @@ import { getSiteUrl, safeJsonLd } from '@shared/seo';
 import { routing } from '@i18n/routing';
 
 export const revalidate = 86400;
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 interface MissionDetailProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: MissionDetailProps): Promise<
   const { locale, slug } = await params;
   const mission = await fetchMissionServer({ slug, lang: locale });
   if (!mission) {
-    notFound();
+    return { title: 'Mission not found', robots: { index: false, follow: false } };
   }
   const site = getSiteUrl();
   const isRu = locale === 'ru';
