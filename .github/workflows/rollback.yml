@@ -53,6 +53,9 @@ jobs:
               echo "IMAGE_TAG=$TARGET_SHA" >> .env
             fi
 
+            echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+            trap 'docker logout ghcr.io >/dev/null 2>&1 || true' EXIT
+
             docker pull ${{ env.BACKEND_IMAGE }}:"$TARGET_SHA"
             docker pull ${{ env.FRONTEND_IMAGE }}:"$TARGET_SHA"
             docker compose up -d --remove-orphans

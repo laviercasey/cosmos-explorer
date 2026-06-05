@@ -239,6 +239,9 @@ jobs:
             set_env_var IMAGE_TAG "$NEW_SHA"
             set_env_var COMPOSE_FILE "docker-compose.yml:docker-compose.prod.yml"
 
+            echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+            trap 'docker logout ghcr.io >/dev/null 2>&1 || true' EXIT
+
             docker pull ${{ env.BACKEND_IMAGE }}:"$NEW_SHA"
             docker pull ${{ env.FRONTEND_IMAGE }}:"$NEW_SHA"
 
