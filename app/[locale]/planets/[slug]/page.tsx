@@ -9,7 +9,7 @@ import { buildSeoMeta, getSiteUrl, planetJsonLd, safeJsonLd } from '@shared/seo'
 import { routing } from '@i18n/routing';
 
 export const revalidate = 86400;
-export const dynamicParams = true;
+export const dynamicParams = false;
 
 type Lang = 'en' | 'ru';
 
@@ -24,12 +24,9 @@ function asLang(locale: string): Lang {
 export async function generateStaticParams() {
   const out: { locale: string; slug: string }[] = [];
   for (const locale of routing.locales) {
-    try {
-      const planets = await fetchPlanetsServer({ lang: locale });
-      for (const p of planets) {
-        out.push({ locale, slug: p.slug });
-      }
-    } catch {
+    const planets = await fetchPlanetsServer({ lang: locale });
+    for (const p of planets) {
+      out.push({ locale, slug: p.slug });
     }
   }
   return out;

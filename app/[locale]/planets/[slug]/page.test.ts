@@ -154,12 +154,10 @@ describe('app/[locale]/planets/[slug] generateStaticParams', () => {
     expect(out).toContainEqual({ locale: 'ru', slug: 'mars' });
   });
 
-  it('tolerates an offline API at build time', async () => {
+  it('fails the build when the API is offline', async () => {
     fetchPlanetsServer.mockRejectedValue(new Error('ECONNREFUSED'));
 
-    const out = await pageModule.generateStaticParams();
-
-    expect(out).toEqual([]);
+    await expect(pageModule.generateStaticParams()).rejects.toThrow('ECONNREFUSED');
   });
 });
 

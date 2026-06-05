@@ -9,7 +9,7 @@ import { getSiteUrl, safeJsonLd } from '@shared/seo';
 import { routing } from '@i18n/routing';
 
 export const revalidate = 86400;
-export const dynamicParams = true;
+export const dynamicParams = false;
 
 interface MissionDetailProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -18,13 +18,10 @@ interface MissionDetailProps {
 export async function generateStaticParams() {
   const out: { locale: string; slug: string }[] = [];
   for (const locale of routing.locales) {
-    try {
-      const missions = await fetchMissionsServer({ lang: locale });
-      for (const m of missions) {
-        const slug = m.slug ?? m.id;
-        if (slug) out.push({ locale, slug });
-      }
-    } catch {
+    const missions = await fetchMissionsServer({ lang: locale });
+    for (const m of missions) {
+      const slug = m.slug ?? m.id;
+      if (slug) out.push({ locale, slug });
     }
   }
   return out;
