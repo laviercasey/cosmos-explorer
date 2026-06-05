@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: MissionDetailProps): Promise<
   const { locale, slug } = await params;
   const mission = await fetchMissionServer({ slug, lang: locale });
   if (!mission) {
-    return { title: 'Mission not found' };
+    notFound();
   }
   const site = getSiteUrl();
   const isRu = locale === 'ru';

@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: PlanetDetailProps): Promise<M
   const lang = asLang(locale);
   const planet = await fetchPlanetServer({ slug, lang: locale });
   if (!planet) {
-    return { title: 'Planet not found' };
+    notFound();
   }
   return buildSeoMeta({ lang, selectedPlanet: planet, siteUrl: getSiteUrl() });
 }
